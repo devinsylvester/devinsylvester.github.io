@@ -1,0 +1,125 @@
+// put global styles here
+body {
+  font-family: Futura;
+}
+
+$brandPrimary: map_get($Colors, brandPrimary);
+$brandSecondary: map_get($Colors, brandSecondary);
+
+button,
+input {
+  &:focus {
+    outline: 0
+  }
+}
+::-webkit-input-placeholder {
+  color: rgb(203,210,205);
+}
+
+.brand-primary {
+  color: $brandPrimary;
+}
+
+.brand-secondary {
+  color: $brandSecondary;
+}
+
+.bg-brand-primary {
+  background-color: $brandPrimary;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.headshot {
+  filter: grayscale(100%);
+  transition: all .15s ease-in-out;
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+
+.bio {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+}
+.skill-icon {
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all .15s ease-in-out;
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.icon-text {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.icon-wrapper {
+  width: 100px;
+}
+
+.reacticon {
+  color: #61dafb;
+}
+
+.angularicon {
+  color: #dc2126;
+}
+
+.jqueryicon {
+  color: #1368ac;
+}
+
+.nodeicon {
+  color: #539e43;
+}
+
+.es6icon {
+  color: #fade34;
+}
+
+
+.gulpicon {
+  color: #eb4a4a;
+}
+
+.bowericon {
+  color: #ffcd2f;
+}
+
+.webpackicon {
+  color: #1c78c0;
+}
+
+.giticon {
+  color: #f05133;
+}
+
+.giticon {
+  color: #f05133;
+}
+
+.androidicon {
+  color: #81b748;
+}
+
+.xcodeicon {
+  color: #02a7f1;
+}

@@ -1,0 +1,108 @@
+body {
+  font-family: Futura; }
+
+button:focus,
+input:focus {
+  outline: 0; }
+
+::-webkit-input-placeholder {
+  color: #cbd2cd; }
+
+.brand-primary {
+  color: rgba(55, 115, 161, 0.5); }
+
+.brand-secondary {
+  color: #rgba 34, 143, 83, 0.5; }
+
+.bg-brand-primary {
+  background-color: rgba(55, 115, 161, 0.5); }
+
+.flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.headshot {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out; }
+  .headshot:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%); }
+
+.bio {
+  position: absolute;
+  top: 0;
+  height: 100vh; }
+
+.skill-icon {
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out; }
+  .skill-icon:hover {
+    opacity: 0; }
+
+.icon-text {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.icon-wrapper {
+  width: 100px; }
+
+.reacticon {
+  color: #61dafb; }
+
+.angularicon {
+  color: #dc2126; }
+
+.jqueryicon {
+  color: #1368ac; }
+
+.nodeicon {
+  color: #539e43; }
+
+.es6icon {
+  color: #fade34; }
+
+.gulpicon {
+  color: #eb4a4a; }
+
+.bowericon {
+  color: #ffcd2f; }
+
+.webpackicon {
+  color: #1c78c0; }
+
+.giticon {
+  color: #f05133; }
+
+.giticon {
+  color: #f05133; }
+
+.androidicon {
+  color: #81b748; }
+
+.xcodeicon {
+  color: #02a7f1; }
