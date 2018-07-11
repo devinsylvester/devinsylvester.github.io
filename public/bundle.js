@@ -25686,7 +25686,25 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 console.log("👋 Hey there!");
-console.log("Looking for the code? Find it on Github: https://github.com/0132143/portfolio");
+console.log("Looking for the source code? Find it on Github: https://github.com/0132143/portfolio");
+
+var renderIcon = function renderIcon(iconName, toolName) {
+  return _react2.default.createElement(
+    "div",
+    { className: "flex-1 flex justify-center" },
+    _react2.default.createElement(
+      "div",
+      { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
+      _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/" + iconName + ".png')" } }),
+      _react2.default.createElement(
+        "div",
+        { className: "w-100 icon-text justify-center " + iconName + " f3 flex tc items-center justify-center" },
+        toolName
+      )
+    )
+  );
+};
+
 var App = function App() {
   return _react2.default.createElement(
     "div",

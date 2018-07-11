@@ -1,7 +1,17 @@
 import React from 'react';
 
 console.log("👋 Hey there!");
-console.log("Looking for the code? Find it on Github: https://github.com/0132143/portfolio");
+console.log("Looking for the source code? Find it on Github: https://github.com/0132143/portfolio");
+
+const renderIcon = (iconName, toolName) => (
+  <div className="flex-1 flex justify-center">
+    <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
+      <div className="skill-icon" style={{ backgroundImage: `url('/images/${iconName}.png')` }} />
+      <div className={`w-100 icon-text justify-center ${iconName} f3 flex tc items-center justify-center`}>{toolName}</div>
+    </div>
+  </div>
+);
+
 const App = () => (
   <div>
     <div>
