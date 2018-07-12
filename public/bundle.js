@@ -25763,149 +25763,46 @@ var App = function App() {
           _react2.default.createElement(
             "div",
             { className: "flex mb3 justify-between flex-wrap" },
-            _react2.default.createElement(
-              "div",
-              { className: "flex-1 flex justify-center" },
-              _react2.default.createElement(
-                "div",
-                { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
-                _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/reacticon.png')" } }),
-                _react2.default.createElement(
-                  "div",
-                  { className: "w-100 icon-text justify-center reacticon f3 flex tc items-center " },
-                  "React"
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "flex-1 flex justify-center" },
-              _react2.default.createElement(
-                "div",
-                { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
-                _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/es6icon.png')" } }),
-                _react2.default.createElement(
-                  "div",
-                  { className: "w-100 icon-text justify-center es6icon f3 flex tc items-center " },
-                  "ECMA Script 6"
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "flex-1 flex justify-center" },
-              _react2.default.createElement(
-                "div",
-                { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
-                _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/rnicon.png')" } }),
-                _react2.default.createElement(
-                  "div",
-                  { className: "w-100 icon-text justify-center reacticon f3 flex tc items-center " },
-                  "React Native"
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "flex-1 flex justify-center" },
-              _react2.default.createElement(
-                "div",
-                { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
-                _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/angularicon.png')" } }),
-                _react2.default.createElement(
-                  "div",
-                  { className: "w-100 icon-text justify-center angularicon f3 flex tc items-center " },
-                  "Angular 1.x"
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "flex-1 flex justify-center" },
-              _react2.default.createElement(
-                "div",
-                { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
-                _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/nodeicon.png')" } }),
-                _react2.default.createElement(
-                  "div",
-                  { className: "w-100 icon-text justify-center nodeicon f3 flex tc items-center justify-center" },
-                  "Node"
-                )
-              )
-            )
+            renderIcon('reacticon', 'React'),
+            renderIcon('es6icon', 'ECMA Script 6'),
+            renderIcon('rnicon', 'React Native'),
+            renderIcon('angularicon', 'Angular 1.x'),
+            renderIcon('nodeicon', 'Node ')
           ),
           _react2.default.createElement(
             "div",
             { className: "flex mb3 justify-between flex-wrap" },
+            renderIcon('giticon', 'Git '),
+            renderIcon('webpackicon', 'webpack '),
+            renderIcon('gulpicon', 'Gulp '),
+            renderIcon('androidicon', 'Android Studio '),
+            renderIcon('xcodeicon', 'Xcode ')
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "flex mb3 justify-between flex-wrap" },
+            renderIcon('css3icon', 'CSS 3 '),
+            renderIcon('tachyonsicon', 'Tachyons '),
+            renderIcon('sassicon', 'Sass '),
+            renderIcon('lessicon', 'less '),
+            renderIcon('bootstrapicon', 'Bootstrap ')
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "flex flex-column mt6 center" },
+          _react2.default.createElement(
+            "div",
+            { className: "f2 mb5 center" },
+            "Work I've Done"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "flex" },
             _react2.default.createElement(
               "div",
-              { className: "flex-1 flex justify-center" },
-              _react2.default.createElement(
-                "div",
-                { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
-                _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/giticon.png')" } }),
-                _react2.default.createElement(
-                  "div",
-                  { className: "w-100 icon-text justify-center giticon f3 flex tc items-center " },
-                  "Git"
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "flex-1 flex justify-center" },
-              _react2.default.createElement(
-                "div",
-                { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
-                _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/webpackicon.png')" } }),
-                _react2.default.createElement(
-                  "div",
-                  { className: "w-100 icon-text justify-center webpackicon f3 flex tc items-center " },
-                  "webpack"
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "flex-1 flex justify-center" },
-              _react2.default.createElement(
-                "div",
-                { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
-                _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/gulpicon.png')" } }),
-                _react2.default.createElement(
-                  "div",
-                  { className: "w-100 icon-text justify-center gulpicon f3 flex tc items-center " },
-                  "Gulp"
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "flex-1 flex justify-center" },
-              _react2.default.createElement(
-                "div",
-                { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
-                _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/androidicon.png')" } }),
-                _react2.default.createElement(
-                  "div",
-                  { className: "w-100 icon-text justify-center androidicon f3 flex tc items-center justify-center" },
-                  "Android Studio"
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "flex-1 flex justify-center" },
-              _react2.default.createElement(
-                "div",
-                { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
-                _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/xcodeicon.png')" } }),
-                _react2.default.createElement(
-                  "div",
-                  { className: "w-100 icon-text justify-center xcodeicon f3 flex tc items-center " },
-                  "Xcode"
-                )
-              )
+              null,
+              _react2.default.createElement("img", { src: "/images/gotcha-login-1.png", alt: "gotcha" })
             )
           )
         )

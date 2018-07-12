@@ -30,68 +30,31 @@ const App = () => (
         <div className="flex flex-column mt6 center">
           <div className="f2 mb5 center">Tools I Use</div>
           <div className="flex mb3 justify-between flex-wrap">
-            <div className="flex-1 flex justify-center">
-              <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
-                <div className="skill-icon" style={{ backgroundImage: "url('/images/reacticon.png')" }} />
-                <div className="w-100 icon-text justify-center reacticon f3 flex tc items-center ">React</div>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center">
-              <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
-                <div className="skill-icon" style={{ backgroundImage: "url('/images/es6icon.png')" }} />
-                <div className="w-100 icon-text justify-center es6icon f3 flex tc items-center ">ECMA Script 6</div>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center">
-              <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
-                <div className="skill-icon" style={{ backgroundImage: "url('/images/rnicon.png')" }} />
-                <div className="w-100 icon-text justify-center reacticon f3 flex tc items-center ">React Native</div>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center">
-              <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
-                <div className="skill-icon" style={{ backgroundImage: "url('/images/angularicon.png')" }} />
-                <div className="w-100 icon-text justify-center angularicon f3 flex tc items-center ">Angular 1.x</div>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center">
-              <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
-                <div className="skill-icon" style={{ backgroundImage: "url('/images/nodeicon.png')" }} />
-                <div className="w-100 icon-text justify-center nodeicon f3 flex tc items-center justify-center">Node</div>
-              </div>
-            </div>
+            {renderIcon('reacticon', 'React')}
+            {renderIcon('es6icon', 'ECMA Script 6')}
+            {renderIcon('rnicon', 'React Native')}
+            {renderIcon('angularicon', 'Angular 1.x')}
+            {renderIcon('nodeicon', 'Node ')}
           </div>
           <div className="flex mb3 justify-between flex-wrap">
-            <div className="flex-1 flex justify-center">
-              <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
-                <div className="skill-icon" style={{ backgroundImage: "url('/images/giticon.png')" }} />
-                <div className="w-100 icon-text justify-center giticon f3 flex tc items-center ">Git</div>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center">
-              <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
-                <div className="skill-icon" style={{ backgroundImage: "url('/images/webpackicon.png')" }} />
-                <div className="w-100 icon-text justify-center webpackicon f3 flex tc items-center ">webpack</div>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center">
-              <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
-                <div className="skill-icon" style={{ backgroundImage: "url('/images/gulpicon.png')" }} />
-                <div className="w-100 icon-text justify-center gulpicon f3 flex tc items-center ">Gulp</div>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center">
-              <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
-                <div className="skill-icon" style={{ backgroundImage: "url('/images/androidicon.png')" }} />
-                <div className="w-100 icon-text justify-center androidicon f3 flex tc items-center justify-center">Android Studio</div>
-              </div>
-            </div>
-            <div className="flex-1 flex justify-center">
-              <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
-                <div className="skill-icon" style={{ backgroundImage: "url('/images/xcodeicon.png')" }} />
-                <div className="w-100 icon-text justify-center xcodeicon f3 flex tc items-center ">Xcode</div>
-              </div>
-            </div>
+            {renderIcon('giticon', 'Git ')}
+            {renderIcon('webpackicon', 'webpack ')}
+            {renderIcon('gulpicon', 'Gulp ')}
+            {renderIcon('androidicon', 'Android Studio ')}
+            {renderIcon('xcodeicon', 'Xcode ')}
+          </div>
+          <div className="flex mb3 justify-between flex-wrap">
+            {renderIcon('css3icon', 'CSS 3 ')}
+            {renderIcon('tachyonsicon', 'Tachyons ')}
+            {renderIcon('sassicon', 'Sass ')}
+            {renderIcon('lessicon', 'less ')}
+            {renderIcon('bootstrapicon', 'Bootstrap ')}
+          </div>
+        </div>
+        <div className="flex flex-column mt6 center">
+          <div className="f2 mb5 center">Work I've Done</div>
+          <div className="flex">
+            <div><img src="/images/gotcha-login-1.png" alt="gotcha" /></div>
           </div>
         </div>
       </div>
