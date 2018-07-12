@@ -1,16 +1,10 @@
 import React from 'react';
 
-console.log("👋 Hey there!");
-console.log("Looking for the source code? Find it on Github: https://github.com/0132143/portfolio");
+import RenderIcon from './RenderIcon';
+import ProjectModal from './ProjectModal';
 
-const renderIcon = (iconName, toolName) => (
-  <div className="flex-1 flex justify-center">
-    <div className="ml3 mr3 flex relative flex-wrap icon-wrapper mb3">
-      <div className="skill-icon" style={{ backgroundImage: `url('/images/${iconName}.png')` }} />
-      <div className={`w-100 icon-text justify-center ${iconName} f3 flex tc items-center justify-center`}>{toolName}</div>
-    </div>
-  </div>
-);
+console.log("👋 Hey there!");
+console.log("Looking for the source code? Find it on Github: https://github.com/0132143/0132143.github.io");
 
 const App = () => (
   <div>
@@ -30,30 +24,31 @@ const App = () => (
         <div className="flex flex-column mt6 center">
           <div className="f2 mb5 center">Tools I Use</div>
           <div className="flex mb3 justify-between flex-wrap">
-            {renderIcon('reacticon', 'React')}
-            {renderIcon('es6icon', 'ECMA Script 6')}
-            {renderIcon('rnicon', 'React Native')}
-            {renderIcon('angularicon', 'Angular 1.x')}
-            {renderIcon('nodeicon', 'Node ')}
+            <RenderIcon iconName="reacticon" toolName="Reac" />
+            <RenderIcon iconName="es6icon" toolName="ECMA Script " />
+            <RenderIcon iconName="rnicon" toolName="React Nativ" />
+            <RenderIcon iconName="angularicon" toolName="Angular 1." />
+            <RenderIcon iconName="nodeicon" toolName="Node" />
           </div>
           <div className="flex mb3 justify-between flex-wrap">
-            {renderIcon('giticon', 'Git ')}
-            {renderIcon('webpackicon', 'webpack ')}
-            {renderIcon('gulpicon', 'Gulp ')}
-            {renderIcon('androidicon', 'Android Studio ')}
-            {renderIcon('xcodeicon', 'Xcode ')}
+            <RenderIcon iconName="giticon" toolName="Git" />
+            <RenderIcon iconName="webpackicon" toolName="webpack" />
+            <RenderIcon iconName="gulpicon" toolName="Gulp" />
+            <RenderIcon iconName="androidicon" toolName="Android Studio" />
+            <RenderIcon iconName="xcodeicon" toolName="Xcode" />
           </div>
           <div className="flex mb3 justify-between flex-wrap">
-            {renderIcon('css3icon', 'CSS 3 ')}
-            {renderIcon('tachyonsicon', 'Tachyons ')}
-            {renderIcon('sassicon', 'Sass ')}
-            {renderIcon('lessicon', 'less ')}
-            {renderIcon('bootstrapicon', 'Bootstrap ')}
+            <RenderIcon iconName="css3icon" toolName="CSS 3" />
+            <RenderIcon iconName="tachyonsicon" toolName="Tachyons" />
+            <RenderIcon iconName="sassicon" toolName="Sass" />
+            <RenderIcon iconName="lessicon" toolName="less" />
+            <RenderIcon iconName="bootstrapicon" toolName="Bootstrap" />
           </div>
         </div>
         <div className="flex flex-column mt6 center">
-          <div className="f2 mb5 center">Work I've Done</div>
+          <div className="f2 mb5 center">Projects I've Worked On</div>
           <div className="flex">
+
             <div><img src="/images/gotcha-login-1.png" alt="gotcha" /></div>
           </div>
         </div>
