@@ -71,7 +71,8 @@ input:focus {
 .icon-wrapper {
   width: 100px; }
 
-.reacticon {
+.reacticon,
+.rnicon {
   color: #61dafb; }
 
 .angularicon {
@@ -106,3 +107,16 @@ input:focus {
 
 .xcodeicon {
   color: #02a7f1; }
+
+.sassicon {
+  color: #cd679a; }
+
+.lessicon {
+  color: #1e416f; }
+
+.bootstrapicon {
+  color: #524078;
+  font-size: 1.4rem; }
+
+.css3icon {
+  color: #0277bd; }
