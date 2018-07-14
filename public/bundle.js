@@ -25909,6 +25909,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
@@ -25923,114 +25925,290 @@ var _ProjectModal2 = _interopRequireDefault(_ProjectModal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 console.log("👋 Hey there!");
 console.log("Looking for the source code? Find it on Github: https://github.com/0132143/0132143.github.io");
 
-var App = function App() {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(
-      'div',
-      null,
-      _react2.default.createElement(
+var App = function (_Component) {
+  _inherits(App, _Component);
+
+  function App(props) {
+    _classCallCheck(this, App);
+
+    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+    _this.state = {
+      showGotcha: false
+    };
+    return _this;
+  }
+
+  _createClass(App, [{
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
         'div',
-        { className: 'vh-100 w-100 white bg-brand-primary flex items-center pa4' },
+        null,
         _react2.default.createElement(
           'div',
-          { className: 'flex vh-100 mw8 center flex-column-m flex-row-l flex-column' },
+          null,
           _react2.default.createElement(
             'div',
-            { className: 'flex flex-1 flex-column justify-center-l justify-end-m justify-end-ns white flex-wrap' },
+            { className: 'vh-100 w-100 white bg-brand-primary flex items-center pa4' },
             _react2.default.createElement(
               'div',
-              { className: 'f2' },
-              'Hi, I\'m Andrew'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'mt3' },
-              'I\'m a software developer living in beautiful Charleston, SC.'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'mt3' },
-              'Currently, I work at Launchpeer, building awesome web and mobile applications with Javascript.'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'mt3' },
-              'In my free time, I enjoy woodworking, bike building, and spending time with my wife and newborn daughter.'
+              { className: 'flex vh-100 mw8 center flex-column-m flex-row-l flex-column' },
+              _react2.default.createElement(
+                'div',
+                { className: 'flex flex-1 flex-column justify-center-l justify-end-m justify-end-ns white flex-wrap' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'f2' },
+                  'Hi, I\'m Andrew'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'mt3' },
+                  'I\'m a software developer living in beautiful Charleston, SC.'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'mt3' },
+                  'Currently, I work at Launchpeer, building awesome web and mobile applications with Javascript.'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'mt3' },
+                  'In my free time, I enjoy woodworking, bike building, and spending time with my wife and newborn daughter.'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'flex-1 flex items-end justify-end' },
+                _react2.default.createElement('img', { className: ' mw5-m mw0-l w-80 headshot', src: '/images/headshotfinal.png', alt: 'headshot' })
+              )
             )
           ),
           _react2.default.createElement(
             'div',
-            { className: 'flex-1 flex items-end justify-end' },
-            _react2.default.createElement('img', { className: ' mw5-m mw0-l w-80 headshot', src: '/images/headshotfinal.png', alt: 'headshot' })
-          )
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: 'mw8 center pl3 pr3' },
-        _react2.default.createElement(
-          'div',
-          { className: 'flex flex-column mt6 center' },
-          _react2.default.createElement(
-            'div',
-            { className: 'f2 mb5 center' },
-            'Tools I Use'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'flex mb3 justify-between flex-wrap' },
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'reacticon', toolName: 'Reac' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'es6icon', toolName: 'ECMA Script ' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'rnicon', toolName: 'React Nativ' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'angularicon', toolName: 'Angular 1.' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'nodeicon', toolName: 'Node' })
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'flex mb3 justify-between flex-wrap' },
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'giticon', toolName: 'Git' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'webpackicon', toolName: 'webpack' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'gulpicon', toolName: 'Gulp' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'androidicon', toolName: 'Android Studio' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'xcodeicon', toolName: 'Xcode' })
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'flex mb3 justify-between flex-wrap' },
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'css3icon', toolName: 'CSS 3' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'tachyonsicon', toolName: 'Tachyons' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'sassicon', toolName: 'Sass' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'lessicon', toolName: 'less' }),
-            _react2.default.createElement(_RenderIcon2.default, { iconName: 'bootstrapicon', toolName: 'Bootstrap' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'flex flex-column mt6 center' },
-          _react2.default.createElement(
-            'div',
-            { className: 'f2 mb5 center' },
-            'Projects I\'ve Worked On'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'flex' },
+            { className: 'mw8 center pl3 pr3' },
             _react2.default.createElement(
               'div',
-              null,
-              _react2.default.createElement('img', { src: '/images/gotcha-login-1.png', alt: 'gotcha' })
+              { className: 'flex flex-column mt6 center' },
+              _react2.default.createElement(
+                'div',
+                { className: 'f2 mb5 center' },
+                'Tools I Use'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'flex mb3 justify-between flex-wrap' },
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'reacticon', toolName: 'Reac' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'es6icon', toolName: 'ECMA Script ' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'rnicon', toolName: 'React Nativ' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'angularicon', toolName: 'Angular 1.' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'nodeicon', toolName: 'Node' })
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'flex mb3 justify-between flex-wrap' },
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'giticon', toolName: 'Git' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'webpackicon', toolName: 'webpack' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'gulpicon', toolName: 'Gulp' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'androidicon', toolName: 'Android Studio' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'xcodeicon', toolName: 'Xcode' })
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'flex mb3 justify-between flex-wrap' },
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'css3icon', toolName: 'CSS 3' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'tachyonsicon', toolName: 'Tachyons' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'sassicon', toolName: 'Sass' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'lessicon', toolName: 'less' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'bootstrapicon', toolName: 'Bootstrap' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'flex flex-column mt6 center' },
+              _react2.default.createElement(
+                'div',
+                { className: 'f2 mb5 center' },
+                'Projects I\'ve Worked On'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'flex' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'mw6 pointer', role: 'button', onClick: function onClick() {
+                      return _this2.setState({ showGotcha: true });
+                    } },
+                  _react2.default.createElement('img', { src: '/images/gotcha-login-1.png', alt: 'gotcha' })
+                ),
+                this.state.showGotcha && _react2.default.createElement(
+                  _ProjectModal2.default,
+                  { onClick: function onClick() {
+                      return _this2.setState({ showGotcha: false });
+                    } },
+                  _react2.default.createElement(
+                    'div',
+                    { className: '' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'f2 mb4 center' },
+                      'Gotcha Rides'
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'flex w-100' },
+                      _react2.default.createElement(
+                        'div',
+                        { className: ' pr3' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'flex mb3' },
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'mr2' },
+                            'Employer:'
+                          ),
+                          _react2.default.createElement(
+                            'div',
+                            null,
+                            'Launchpeer'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'flex mb3' },
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'mr2' },
+                            'Scope:'
+                          ),
+                          _react2.default.createElement(
+                            'div',
+                            null,
+                            'On demand ride sharing app for low speed electric vehicles'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'flex mb3' },
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'mr2' },
+                            'Title:'
+                          ),
+                          _react2.default.createElement(
+                            'div',
+                            null,
+                            'Front End Developer'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'flex mb3' },
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'mr2' },
+                            'Duration:'
+                          ),
+                          _react2.default.createElement(
+                            'div',
+                            null,
+                            '9 months'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'flex mb5' },
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'mr2' },
+                            'Stack:'
+                          ),
+                          _react2.default.createElement(
+                            'div',
+                            null,
+                            'React, React Native'
+                          )
+                        )
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'flex-1 pl3 ml4' },
+                        'Gotcha Rides was the first app where I really cut my teeth on React Native development. The scope of the project ended up being pretty big, with a public facing passenger app, an internal driver app, and a web based admin portal. I was responsible for leading the front end team in planning, developing, and deploying the applications throughout the project lifecycle. I had the opportunity to tackle some really interesting problems, like updating branding for each vehicle based on their sponsor, and handling driver location accuracy across different devices.'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'flex-1' },
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'center mb5' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'ma3' },
+                          'Driver App'
+                        ),
+                        _react2.default.createElement('img', { src: '/images/gotcha-d-full.png', alt: 'gotcha' })
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'center mb5' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'ma3' },
+                          'Passenger App'
+                        ),
+                        _react2.default.createElement('img', { src: '/images/gotcha-full.png', alt: 'gotcha' })
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'center mb5' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'ma3' },
+                          'Admin Portal'
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'flex justify-between' },
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'mr3' },
+                            _react2.default.createElement('img', { src: '/images/gotcha-a-rides.png', alt: 'gotcha' })
+                          ),
+                          _react2.default.createElement(
+                            'div',
+                            { className: 'ml3' },
+                            ' ',
+                            _react2.default.createElement('img', { src: '/images/gotcha-a-rides-edit.png', alt: 'gotcha' })
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
             )
           )
         )
-      )
-    )
-  );
-};
+      );
+    }
+  }]);
+
+  return App;
+}(_react.Component);
 
 exports.default = App;
 
@@ -26083,6 +26261,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
@@ -26093,38 +26273,68 @@ var _styles = __webpack_require__(502);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ModalCard = function ModalCard(_ref) {
-  var onClick = _ref.onClick,
-      children = _ref.children;
-  return _react2.default.createElement(
-    'div',
-    { className: 'ma3 absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center' },
-    _react2.default.createElement(
-      'div',
-      { className: 'w-100 bg-white absolute z-2 mw6',
-        style: {} },
-      _react2.default.createElement(
-        'div',
-        {
-          className: 'absolute right-1 top-1 pointer',
-          onClick: onClick,
-          onKeyPress: onClick,
-          role: 'button' },
-        _react2.default.createElement(_reactFeather.XCircle, { color: _styles.Colors.silver, size: 20 })
-      ),
-      children
-    ),
-    _react2.default.createElement('div', {
-      role: 'button',
-      className: 'fixed top-0 bottom-0 right-0 left-0 z-1',
-      style: {
-        backgroundColor: "rgba(0, 0, 0, 0.5)"
-      },
-      onClick: onClick })
-  );
-};
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-exports.default = ModalCard;
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ProjectModal = function (_Component) {
+  _inherits(ProjectModal, _Component);
+
+  function ProjectModal() {
+    _classCallCheck(this, ProjectModal);
+
+    return _possibleConstructorReturn(this, (ProjectModal.__proto__ || Object.getPrototypeOf(ProjectModal)).apply(this, arguments));
+  }
+
+  _createClass(ProjectModal, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      document.body.style.overflow = 'hidden';
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      document.body.style.overflow = 'scroll';
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          onClick = _props.onClick,
+          children = _props.children;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'w-100' },
+        _react2.default.createElement(
+          'div',
+          { className: 'center bg-white fixed overflow-scroll top-0 bottom-0 right-0 left-0 flex justify-center items-center' },
+          _react2.default.createElement(
+            'div',
+            { className: 'w-100 mw8 bg-white z-2 h-100' },
+            _react2.default.createElement(
+              'div',
+              {
+                className: 'pointer flex items-center mt3 mb5',
+                onClick: onClick,
+                onKeyPress: onClick,
+                role: 'button' },
+              _react2.default.createElement(_reactFeather.ArrowLeft, { color: _styles.Colors.silver, size: 20 }),
+              '\xA0BACK'
+            ),
+            children
+          )
+        )
+      );
+    }
+  }]);
+
+  return ProjectModal;
+}(_react.Component);
+
+exports.default = ProjectModal;
 
 /***/ }),
 /* 231 */

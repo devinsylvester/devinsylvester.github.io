@@ -1,31 +1,37 @@
-import React from 'react';
-import { XCircle } from 'react-feather';
+import React, { Component } from 'react';
+import { ArrowLeft } from 'react-feather';
 import { Colors } from '../config/styles';
 
-const ModalCard = ({
-  onClick, children
-}) => (
-  <div className="ma3 absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center">
-    <div className="w-100 bg-white absolute z-2 mw6"
-      style={{
-        }}>
-      <div
-        className="absolute right-1 top-1 pointer"
-        onClick={onClick}
-        onKeyPress={onClick}
-        role="button">
-        <XCircle color={Colors.silver} size={20} />
-      </div>
-      {children}
-    </div>
-    <div
-      role="button"
-      className="fixed top-0 bottom-0 right-0 left-0 z-1"
-      style={{
-        backgroundColor: "rgba(0, 0, 0, 0.5)"
-      }}
-      onClick={onClick} />
-  </div>
-);
+class ProjectModal extends Component {
+  componentDidMount() {
+    document.body.style.overflow = 'hidden';
+  }
 
-export default ModalCard;
+  componentWillUnmount() {
+    document.body.style.overflow = 'scroll';
+  }
+
+  render() {
+    const { onClick, children } = this.props;
+    return (
+      <div className="w-100">
+        <div className="center bg-white fixed overflow-scroll top-0 bottom-0 right-0 left-0 flex justify-center items-center">
+          <div className="w-100 mw8 bg-white z-2 h-100">
+            <div
+              className="pointer flex items-center mt3 mb5"
+              onClick={onClick}
+              onKeyPress={onClick}
+              role="button">
+              <ArrowLeft color={Colors.silver} size={20} />
+              &nbsp;BACK
+            </div>
+            {children}
+          </div>
+        </div>
+      </div>
+
+    );
+  }
+}
+
+export default ProjectModal;

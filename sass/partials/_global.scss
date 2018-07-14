@@ -1,6 +1,7 @@
 // put global styles here
 body {
-  font-family: Futura;
+  font-family: Helvetica;
+  font-weight: 100;
 }
 
 $brandPrimary: map_get($Colors, brandPrimary);
