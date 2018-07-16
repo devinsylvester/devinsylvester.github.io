@@ -25967,7 +25967,7 @@ var App = function (_Component) {
               { className: 'flex vh-100 mw8 center flex-column-m flex-row-l flex-column' },
               _react2.default.createElement(
                 'div',
-                { className: 'flex flex-1 flex-column justify-center-l justify-end-m justify-end-ns white flex-wrap' },
+                { className: 'flex flex-1 flex-column justify-center-l justify-end-m justify-end white flex-wrap' },
                 _react2.default.createElement(
                   'div',
                   { className: 'f2' },
@@ -25981,7 +25981,13 @@ var App = function (_Component) {
                 _react2.default.createElement(
                   'div',
                   { className: 'mt3' },
-                  'Currently, I work at Launchpeer, building awesome web and mobile applications with Javascript.'
+                  'Currently, I work at ',
+                  _react2.default.createElement(
+                    'a',
+                    { target: '_blank', href: 'https://launchpeer.com' },
+                    'Launchpeer'
+                  ),
+                  ', building awesome web and mobile applications with Javascript.'
                 ),
                 _react2.default.createElement(
                   'div',
@@ -25991,7 +25997,7 @@ var App = function (_Component) {
               ),
               _react2.default.createElement(
                 'div',
-                { className: 'flex-1 flex items-end justify-end' },
+                { className: 'flex-1 flex items-end justify-end mt5' },
                 _react2.default.createElement('img', { className: ' mw5-m mw0-l w-80 headshot', src: '/images/headshotfinal.png', alt: 'headshot' })
               )
             )
@@ -26010,16 +26016,16 @@ var App = function (_Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'flex mb3 justify-between flex-wrap' },
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'reacticon', toolName: 'Reac' }),
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'es6icon', toolName: 'ECMA Script ' }),
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'rnicon', toolName: 'React Nativ' }),
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'angularicon', toolName: 'Angular 1.' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'reacticon', toolName: 'React' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'es6icon', toolName: 'ECMA Script 6' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'rnicon', toolName: 'React Native' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'angularicon', toolName: 'Angular 1.x' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'nodeicon', toolName: 'Node' })
               ),
               _react2.default.createElement(
                 'div',
                 { className: 'flex mb3 justify-between flex-wrap' },
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'giticon', toolName: 'Git' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'giticon', toolName: 'git' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'webpackicon', toolName: 'webpack' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'gulpicon', toolName: 'Gulp' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'androidicon', toolName: 'Android Studio' }),
@@ -26029,7 +26035,7 @@ var App = function (_Component) {
                 'div',
                 { className: 'flex mb3 justify-between flex-wrap' },
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'css3icon', toolName: 'CSS 3' }),
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'tachyonsicon', toolName: 'Tachyons' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'tachyonsicon', toolName: 'tachyons' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'sassicon', toolName: 'Sass' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'lessicon', toolName: 'less' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'bootstrapicon', toolName: 'Bootstrap' })
@@ -26040,7 +26046,7 @@ var App = function (_Component) {
               { className: 'flex flex-column mt6 center' },
               _react2.default.createElement(
                 'div',
-                { className: 'f2 mb5 center' },
+                { className: 'f2 mb5 center tc' },
                 'Projects I\'ve Worked On'
               ),
               _react2.default.createElement(
@@ -26060,7 +26066,7 @@ var App = function (_Component) {
                     } },
                   _react2.default.createElement(
                     'div',
-                    { className: '' },
+                    { className: 'pa4 p0-m p0-l' },
                     _react2.default.createElement(
                       'div',
                       { className: 'f2 mb4 center' },
@@ -26068,10 +26074,10 @@ var App = function (_Component) {
                     ),
                     _react2.default.createElement(
                       'div',
-                      { className: 'flex w-100' },
+                      { className: 'flex flex-row-l flex-column-m flex-column w-100' },
                       _react2.default.createElement(
                         'div',
-                        { className: ' pr3' },
+                        { className: 'pr3' },
                         _react2.default.createElement(
                           'div',
                           { className: 'flex mb3' },
@@ -26145,7 +26151,7 @@ var App = function (_Component) {
                       ),
                       _react2.default.createElement(
                         'div',
-                        { className: 'flex-1 pl3 ml4' },
+                        { className: 'flex-1 ml4-l ml pb4-m pb4-l' },
                         'Gotcha Rides was the first app where I really cut my teeth on React Native development. The scope of the project ended up being pretty big, with a public facing passenger app, an internal driver app, and a web based admin portal. I was responsible for leading the front end team in planning, developing, and deploying the applications throughout the project lifecycle. I had the opportunity to tackle some really interesting problems, like updating branding for each vehicle based on their sponsor, and handling driver location accuracy across different devices.'
                       )
                     ),
@@ -26326,7 +26332,12 @@ var ProjectModal = function (_Component) {
             ),
             children
           )
-        )
+        ),
+        _react2.default.createElement('div', {
+          role: 'button',
+          className: 'fixed top-0 bottom-0 right-0 left-0 z-1',
+          style: { backgroundColor: "rgba(0, 0, 0, 0.5)" },
+          onClick: onClick })
       );
     }
   }]);

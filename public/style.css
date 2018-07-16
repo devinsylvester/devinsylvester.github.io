@@ -6,6 +6,9 @@ button:focus,
 input:focus {
   outline: 0; }
 
+a {
+  color: white; }
+
 ::-webkit-input-placeholder {
   color: #cbd2cd; }
 
