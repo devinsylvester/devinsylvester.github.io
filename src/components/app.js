@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import RenderIcon from './RenderIcon';
 import ProjectModal from './ProjectModal';
+import GotchaModal from './GotchaModal';
+import MylaiModal from './MylaiModal';
 
 console.log("👋 Hey there!");
 console.log("Looking for the source code? Find it on Github: https://github.com/0132143/0132143.github.io");
@@ -11,6 +13,7 @@ class App extends Component {
     super(props);
     this.state = {
       showGotcha: false,
+      showMylai: false,
     };
   }
 
@@ -23,7 +26,7 @@ class App extends Component {
               <div className="flex flex-1 flex-column justify-center-l justify-end-m justify-end white flex-wrap">
                 <div className="f2">Hi, I'm Andrew</div>
                 <div className="mt3">I'm a software developer living in beautiful Charleston, SC.</div>
-                <div className="mt3">Currently, I work at <a target="_blank" href="https://launchpeer.com">Launchpeer</a>, building awesome web and mobile applications with Javascript.</div>
+                <div className="mt3">Currently, I work at <a rel="noopener noreferrer" target="_blank" href="https://launchpeer.com">Launchpeer</a>, building awesome web and mobile applications with Javascript.</div>
                 <div className="mt3">In my free time, I enjoy woodworking, bike building, and spending time with my wife and newborn daughter.</div>
               </div>
               <div className="flex-1 flex items-end justify-end mt5"><img className=" mw5-m mw0-l w-80 headshot" src="/images/headshotfinal.png" alt="headshot" /></div>
@@ -36,7 +39,7 @@ class App extends Component {
                 <RenderIcon iconName="reacticon" toolName="React" />
                 <RenderIcon iconName="es6icon" toolName="ECMA Script 6" />
                 <RenderIcon iconName="rnicon" toolName="React Native" />
-                <RenderIcon iconName="angularicon" toolName="Angular 1.x" />
+                <RenderIcon iconName="parseicon" toolName="Parse Server" />
                 <RenderIcon iconName="nodeicon" toolName="Node" />
               </div>
               <div className="flex mb3 justify-between flex-wrap">
@@ -55,58 +58,18 @@ class App extends Component {
               </div>
             </div>
             <div className="flex flex-column mt6 center">
-              <div className="f2 mb5 center tc">Projects I've Worked On</div>
+              <div className="f2 mb5 center tc">Recent Projects</div>
               <div className="flex">
                 <div className="mw6 pointer" role="button" onClick={() => this.setState({ showGotcha: true })}><img src="/images/gotcha-login-1.png" alt="gotcha" /></div>
                 {this.state.showGotcha &&
                   <ProjectModal onClick={() => this.setState({ showGotcha: false })}>
-                    <div className="pa4 p0-m p0-l">
-                      <div className="f2 mb4 center">Gotcha Rides</div>
-                      <div className="flex flex-row-l flex-column-m flex-column w-100">
-                        <div className="pr3">
-                          <div className="flex mb3">
-                            <div className="mr2">Employer:</div>
-                            <div>Launchpeer</div>
-                          </div>
-                          <div className="flex mb3">
-                            <div className="mr2">Scope:</div>
-                            <div>On demand ride sharing app for low speed electric vehicles</div>
-                          </div>
-                          <div className="flex mb3">
-                            <div className="mr2">Title:</div>
-                            <div>Front End Developer</div>
-                          </div>
-                          <div className="flex mb3">
-                            <div className="mr2">Duration:</div>
-                            <div>9 months</div>
-                          </div>
-                          <div className="flex mb5">
-                            <div className="mr2">Stack:</div>
-                            <div>React, React Native</div>
-                          </div>
-                        </div>
-                        <div className="flex-1 ml4-l ml pb4-m pb4-l">
-                          Gotcha Rides was the first app where I really cut my teeth on React Native development. The scope of the project ended up being pretty big, with a public facing passenger app, an internal driver app, and a web based admin portal. I was responsible for leading the front end team in planning, developing, and deploying the applications throughout the project lifecycle. I had the opportunity to tackle some really interesting problems, like updating branding for each vehicle based on their sponsor, and handling driver location accuracy across different devices.
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <div className="center mb5">
-                          <div className="ma3">Driver App</div>
-                          <img src="/images/gotcha-d-full.png" alt="gotcha" />
-                        </div>
-                        <div className="center mb5">
-                          <div className="ma3">Passenger App</div>
-                          <img src="/images/gotcha-full.png" alt="gotcha" />
-                        </div>
-                        <div className="center mb5">
-                          <div className="ma3">Admin Portal</div>
-                          <div className="flex justify-between">
-                            <div className="mr3"><img src="/images/gotcha-a-rides.png" alt="gotcha" /></div>
-                            <div className="ml3"> <img src="/images/gotcha-a-rides-edit.png" alt="gotcha" /></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <GotchaModal />
+                  </ProjectModal>
+                }
+                <div className="mw6 pointer" role="button" onClick={() => this.setState({ showMylai: true })}><img src="/images/mylai-login-1.png" alt="mylai" /></div>
+                {this.state.showMylai &&
+                  <ProjectModal onClick={() => this.setState({ showMylai: false })}>
+                    <MylaiModal />
                   </ProjectModal>
                 }
               </div>

@@ -14,11 +14,13 @@ class ProjectModal extends Component {
   render() {
     const { onClick, children } = this.props;
     return (
-      <div className="w-100">
-        <div className="center bg-white fixed overflow-scroll top-0 bottom-0 right-0 left-0 flex justify-center items-center">
+      <div className="w-100 pa3 fixed top-0 bottom-0 right-0 left-0"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+        >
+        <div className="ma4 bg-white fixed overflow-scroll top-0 bottom-0 right-0 left-0 flex justify-center items-center">
           <div className="w-100 mw8 bg-white z-2 h-100">
             <div
-              className="pointer flex items-center mt3 mb5"
+              className="pointer flex items-center pa4 mb4"
               onClick={onClick}
               onKeyPress={onClick}
               role="button">
@@ -28,11 +30,6 @@ class ProjectModal extends Component {
             {children}
           </div>
         </div>
-        <div
-          role="button"
-          className="fixed top-0 bottom-0 right-0 left-0 z-1"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
-          onClick={onClick} />
       </div>
 
     );

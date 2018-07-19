@@ -14115,11 +14115,11 @@ var _app = __webpack_require__(228);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _test = __webpack_require__(503);
+var _test = __webpack_require__(505);
 
 var _test2 = _interopRequireDefault(_test);
 
-__webpack_require__(504);
+__webpack_require__(506);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25923,6 +25923,14 @@ var _ProjectModal = __webpack_require__(230);
 
 var _ProjectModal2 = _interopRequireDefault(_ProjectModal);
 
+var _GotchaModal = __webpack_require__(503);
+
+var _GotchaModal2 = _interopRequireDefault(_GotchaModal);
+
+var _MylaiModal = __webpack_require__(504);
+
+var _MylaiModal2 = _interopRequireDefault(_MylaiModal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25943,7 +25951,8 @@ var App = function (_Component) {
     var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
     _this.state = {
-      showGotcha: false
+      showGotcha: false,
+      showMylai: false
     };
     return _this;
   }
@@ -25984,7 +25993,7 @@ var App = function (_Component) {
                   'Currently, I work at ',
                   _react2.default.createElement(
                     'a',
-                    { target: '_blank', href: 'https://launchpeer.com' },
+                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://launchpeer.com' },
                     'Launchpeer'
                   ),
                   ', building awesome web and mobile applications with Javascript.'
@@ -26019,7 +26028,7 @@ var App = function (_Component) {
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'reacticon', toolName: 'React' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'es6icon', toolName: 'ECMA Script 6' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'rnicon', toolName: 'React Native' }),
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'angularicon', toolName: 'Angular 1.x' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'parseicon', toolName: 'Parse Server' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'nodeicon', toolName: 'Node' })
               ),
               _react2.default.createElement(
@@ -26047,7 +26056,7 @@ var App = function (_Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'f2 mb5 center tc' },
-                'Projects I\'ve Worked On'
+                'Recent Projects'
               ),
               _react2.default.createElement(
                 'div',
@@ -26064,146 +26073,21 @@ var App = function (_Component) {
                   { onClick: function onClick() {
                       return _this2.setState({ showGotcha: false });
                     } },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'pa4 p0-m p0-l' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'f2 mb4 center' },
-                      'Gotcha Rides'
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'flex flex-row-l flex-column-m flex-column w-100' },
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'pr3' },
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'flex mb3' },
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'mr2' },
-                            'Employer:'
-                          ),
-                          _react2.default.createElement(
-                            'div',
-                            null,
-                            'Launchpeer'
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'flex mb3' },
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'mr2' },
-                            'Scope:'
-                          ),
-                          _react2.default.createElement(
-                            'div',
-                            null,
-                            'On demand ride sharing app for low speed electric vehicles'
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'flex mb3' },
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'mr2' },
-                            'Title:'
-                          ),
-                          _react2.default.createElement(
-                            'div',
-                            null,
-                            'Front End Developer'
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'flex mb3' },
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'mr2' },
-                            'Duration:'
-                          ),
-                          _react2.default.createElement(
-                            'div',
-                            null,
-                            '9 months'
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'flex mb5' },
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'mr2' },
-                            'Stack:'
-                          ),
-                          _react2.default.createElement(
-                            'div',
-                            null,
-                            'React, React Native'
-                          )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'flex-1 ml4-l ml pb4-m pb4-l' },
-                        'Gotcha Rides was the first app where I really cut my teeth on React Native development. The scope of the project ended up being pretty big, with a public facing passenger app, an internal driver app, and a web based admin portal. I was responsible for leading the front end team in planning, developing, and deploying the applications throughout the project lifecycle. I had the opportunity to tackle some really interesting problems, like updating branding for each vehicle based on their sponsor, and handling driver location accuracy across different devices.'
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'flex-1' },
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'center mb5' },
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'ma3' },
-                          'Driver App'
-                        ),
-                        _react2.default.createElement('img', { src: '/images/gotcha-d-full.png', alt: 'gotcha' })
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'center mb5' },
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'ma3' },
-                          'Passenger App'
-                        ),
-                        _react2.default.createElement('img', { src: '/images/gotcha-full.png', alt: 'gotcha' })
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'center mb5' },
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'ma3' },
-                          'Admin Portal'
-                        ),
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'flex justify-between' },
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'mr3' },
-                            _react2.default.createElement('img', { src: '/images/gotcha-a-rides.png', alt: 'gotcha' })
-                          ),
-                          _react2.default.createElement(
-                            'div',
-                            { className: 'ml3' },
-                            ' ',
-                            _react2.default.createElement('img', { src: '/images/gotcha-a-rides-edit.png', alt: 'gotcha' })
-                          )
-                        )
-                      )
-                    )
-                  )
+                  _react2.default.createElement(_GotchaModal2.default, null)
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'mw6 pointer', role: 'button', onClick: function onClick() {
+                      return _this2.setState({ showMylai: true });
+                    } },
+                  _react2.default.createElement('img', { src: '/images/mylai-login-1.png', alt: 'mylai' })
+                ),
+                this.state.showMylai && _react2.default.createElement(
+                  _ProjectModal2.default,
+                  { onClick: function onClick() {
+                      return _this2.setState({ showMylai: false });
+                    } },
+                  _react2.default.createElement(_MylaiModal2.default, null)
                 )
               )
             )
@@ -26313,17 +26197,19 @@ var ProjectModal = function (_Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'w-100' },
+        { className: 'w-100 pa3 fixed top-0 bottom-0 right-0 left-0',
+          style: { backgroundColor: "rgba(0, 0, 0, 0.5)" }
+        },
         _react2.default.createElement(
           'div',
-          { className: 'center bg-white fixed overflow-scroll top-0 bottom-0 right-0 left-0 flex justify-center items-center' },
+          { className: 'ma4 bg-white fixed overflow-scroll top-0 bottom-0 right-0 left-0 flex justify-center items-center' },
           _react2.default.createElement(
             'div',
             { className: 'w-100 mw8 bg-white z-2 h-100' },
             _react2.default.createElement(
               'div',
               {
-                className: 'pointer flex items-center mt3 mb5',
+                className: 'pointer flex items-center pa4 mb4',
                 onClick: onClick,
                 onKeyPress: onClick,
                 role: 'button' },
@@ -26332,12 +26218,7 @@ var ProjectModal = function (_Component) {
             ),
             children
           )
-        ),
-        _react2.default.createElement('div', {
-          role: 'button',
-          className: 'fixed top-0 bottom-0 right-0 left-0 z-1',
-          style: { backgroundColor: "rgba(0, 0, 0, 0.5)" },
-          onClick: onClick })
+        )
       );
     }
   }]);
@@ -44718,6 +44599,330 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var GotchaModal = function GotchaModal() {
+  return _react2.default.createElement(
+    "div",
+    { className: "pa4 p0-m p0-l" },
+    _react2.default.createElement(
+      "div",
+      { className: "f2 mb4 center" },
+      "Gotcha Rides"
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "flex flex-row-l flex-column-m flex-column w-100" },
+      _react2.default.createElement(
+        "div",
+        { className: "pr3" },
+        _react2.default.createElement(
+          "div",
+          { className: "flex mb3" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr2" },
+            "Employer:"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            "Launchpeer"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "flex mb3" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr2" },
+            "Scope:"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            "On demand ride sharing app for low speed electric vehicles"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "flex mb3" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr2" },
+            "Title:"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            "Front End Developer"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "flex mb3" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr2" },
+            "Duration:"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            "9 months"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "flex mb5" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr2" },
+            "Stack:"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            "React, React Native"
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "flex-1 ml4-l ml pb4-m pb4-l" },
+        "Gotcha Rides was the first app where I really cut my teeth on React Native development. The scope of the project ended up being pretty big, with a public facing passenger app, an internal driver app, and a web based admin portal. I was responsible for leading the front end team in planning, developing, and deploying the applications throughout the project lifecycle. I had the opportunity to tackle some really interesting problems, like updating branding for each vehicle based on their sponsor, and handling driver location accuracy across different devices."
+      )
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "flex-1" },
+      _react2.default.createElement(
+        "div",
+        { className: "center mb5" },
+        _react2.default.createElement(
+          "div",
+          { className: "ma3" },
+          "Driver App"
+        ),
+        _react2.default.createElement("img", { src: "/images/gotcha-d-full.png", alt: "gotcha" })
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "center mb5" },
+        _react2.default.createElement(
+          "div",
+          { className: "ma3" },
+          "Passenger App"
+        ),
+        _react2.default.createElement("img", { src: "/images/gotcha-full.png", alt: "gotcha" })
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "center mb5" },
+        _react2.default.createElement(
+          "div",
+          { className: "ma3" },
+          "Admin Portal"
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "flex justify-between" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr3" },
+            _react2.default.createElement("img", { src: "/images/gotcha-a-rides.png", alt: "gotcha" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "ml3" },
+            " ",
+            _react2.default.createElement("img", { src: "/images/gotcha-a-rides-edit.png", alt: "gotcha" })
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = GotchaModal;
+
+/***/ }),
+/* 504 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MylaiModal = function MylaiModal() {
+  return _react2.default.createElement(
+    "div",
+    { className: "pa4 p0-m p0-l" },
+    _react2.default.createElement(
+      "div",
+      { className: "f2 mb4 center" },
+      "Mylai"
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "flex flex-row-l flex-column-m flex-column w-100" },
+      _react2.default.createElement(
+        "div",
+        { className: "pr3" },
+        _react2.default.createElement(
+          "div",
+          { className: "flex mb3" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr2" },
+            "Employer:"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            "Launchpeer"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "flex mb3" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr2" },
+            "Scope:"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            "Location based, on demand personal training service"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "flex mb3" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr2" },
+            "Title:"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            "Full Stack Developer"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "flex mb3" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr2" },
+            "Duration:"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            "5 months"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "flex mb5" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr2" },
+            "Stack:"
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            "React, React Native, Parse Server"
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "flex-1 ml4-l ml pb4-m pb4-l" },
+        "Mylai offered some really exciting opportunites for me as a developer. It ended up being the largest project that I have developed entirely on my own, and was the first mobile application I wrote with two user roles that allowed for two totally different functionalities within the same app. The project consisted of a client app, trainer app, and admin portal, and utilized sockets, geolocation, and push notifications for a rich user experience."
+      )
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "flex-1" },
+      _react2.default.createElement(
+        "div",
+        { className: "center mb5" },
+        _react2.default.createElement(
+          "div",
+          { className: "ma3" },
+          "Client App"
+        ),
+        _react2.default.createElement("img", { src: "/images/mylai-c-full.png", alt: "gotcha" })
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "center mb5" },
+        _react2.default.createElement(
+          "div",
+          { className: "ma3" },
+          "Trainer App"
+        ),
+        _react2.default.createElement("img", { src: "/images/mylai-t-full.png", alt: "gotcha" })
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "center mb5" },
+        _react2.default.createElement(
+          "div",
+          { className: "ma3" },
+          "Admin Portal"
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "flex justify-between" },
+          _react2.default.createElement(
+            "div",
+            { className: "mr3" },
+            _react2.default.createElement("img", { src: "/images/mylai-a-overview.png", alt: "mylai" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "ml3" },
+            " ",
+            _react2.default.createElement("img", { src: "/images/mylai-a-trainer.png", alt: "mylai" })
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = MylaiModal;
+
+/***/ }),
+/* 505 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var test = function test() {
   return _react2.default.createElement(
     'div',
@@ -44729,7 +44934,7 @@ var test = function test() {
 exports.default = test;
 
 /***/ }),
-/* 504 */
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
