@@ -6,6 +6,7 @@ body {
 
 $brandPrimary: map_get($Colors, brandPrimary);
 $brandSecondary: map_get($Colors, brandSecondary);
+$brandSolid: map_get($Colors, brandSolid);
 
 button,
 input {
@@ -20,6 +21,83 @@ a {
 ::-webkit-input-placeholder {
   color: rgb(203,210,205);
 }
+
+.loading-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $brandSolid;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
+
+  &.loaded {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+.loading {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.loading div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.loading div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.loading div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.loading div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.loading div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
 
 .brand-primary {
   color: $brandPrimary;
@@ -73,11 +151,15 @@ a {
   height: 100px;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .icon-wrapper {
   width: 100px;
+}
+
+.icon-wide {
+  width: 100%;
 }
 
 .reacticon,
@@ -149,4 +231,29 @@ a {
 
 .parseicon {
   color: #159cee;
+}
+
+.strike-through-wrapper {
+  position: relative;
+
+  .strike-through-first {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: red;
+    top: 50%;
+    opacity: 0.8;
+    rotate: 7deg;
+  }
+  .strike-through-second {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: red;
+    top: 50%;
+    opacity: 0.8;
+    rotate: -7deg;
+  }
 }

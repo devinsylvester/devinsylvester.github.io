@@ -14115,19 +14115,14 @@ var _app = __webpack_require__(228);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _test = __webpack_require__(505);
-
-var _test2 = _interopRequireDefault(_test);
-
-__webpack_require__(506);
+__webpack_require__(505);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(
   _reactRouter.Router,
   { history: _reactRouter.browserHistory },
-  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _app2.default }),
-  _react2.default.createElement(_reactRouter.Route, { path: '/test', component: _test2.default })
+  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _app2.default })
 ), document.querySelector('.page-container'));
 
 /***/ }),
@@ -25940,7 +25935,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 console.log("👋 Hey there!");
-console.log("Looking for the source code? Find it on Github: https://github.com/0132143/0132143.github.io");
+console.log("Looking for the source code? It's not the most up to date but you can find it on Github: https://github.com/adlondon/adlondon.github.io");
 
 var App = function (_Component) {
   _inherits(App, _Component);
@@ -25952,22 +25947,58 @@ var App = function (_Component) {
 
     _this.state = {
       showGotcha: false,
-      showMylai: false
+      showMylai: false,
+      loaded: false
     };
     return _this;
   }
 
   _createClass(App, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      setTimeout(function () {
+        _this2.setState({ loaded: true });
+      }, 2000);
+    }
+  }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
+      var _this3 = this;
 
       return _react2.default.createElement(
         'div',
         null,
         _react2.default.createElement(
           'div',
+          { className: 'loading-wrapper ' + (this.state.loaded ? "loaded" : "") },
+          _react2.default.createElement(
+            'div',
+            { className: 'loading' },
+            _react2.default.createElement('div', null),
+            _react2.default.createElement('div', null),
+            _react2.default.createElement('div', null),
+            _react2.default.createElement('div', null)
+          )
+        ),
+        _react2.default.createElement(
+          'div',
           null,
+          _react2.default.createElement(
+            'div',
+            { className: 'absolute right-0 flex' },
+            _react2.default.createElement(
+              'a',
+              { className: 'pa3', rel: 'noopener noreferrer', target: '_blank', href: 'https://github.com/adlondon' },
+              'Github'
+            ),
+            _react2.default.createElement(
+              'a',
+              { className: 'pa3', rel: 'noopener noreferrer', target: '_blank', href: '/images/Andrew London Resume - 2021.pdf' },
+              'Resume'
+            )
+          ),
           _react2.default.createElement(
             'div',
             { className: 'vh-100 w-100 white bg-brand-primary flex items-center pa4' },
@@ -25985,7 +26016,7 @@ var App = function (_Component) {
                 _react2.default.createElement(
                   'div',
                   { className: 'mt3' },
-                  'I\'m a software developer living in beautiful Charleston, SC.'
+                  'I\'m a software engineer living in beautiful Chattanooga, TN.'
                 ),
                 _react2.default.createElement(
                   'div',
@@ -25993,15 +26024,33 @@ var App = function (_Component) {
                   'Currently, I work at ',
                   _react2.default.createElement(
                     'a',
-                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://launchpeer.com' },
-                    'Launchpeer'
+                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://rhinogram.com' },
+                    'Rhinogram'
                   ),
-                  ', building awesome web and mobile applications with Javascript.'
+                  ', building HIPAA compliant communication tools for the healthcare sector.'
                 ),
                 _react2.default.createElement(
                   'div',
                   { className: 'mt3' },
-                  'In my free time, I enjoy woodworking, bike building, and spending time with my wife and newborn daughter.'
+                  'In my free time, I enjoy ',
+                  _react2.default.createElement(
+                    'a',
+                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://instagram.com/adlondon' },
+                    'woodworking'
+                  ),
+                  ', ',
+                  _react2.default.createElement(
+                    'a',
+                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://www.highpointclimbing.com/chattanooga/chattanooga-main' },
+                    'rock climbing'
+                  ),
+                  ', and making stuff at ',
+                  _react2.default.createElement(
+                    'a',
+                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://www.chattlab.org//' },
+                    'Chatt*Lab'
+                  ),
+                  '.'
                 )
               ),
               _react2.default.createElement(
@@ -26020,7 +26069,7 @@ var App = function (_Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'f2 mb5 center' },
-                'Tools I Use'
+                'Stack'
               ),
               _react2.default.createElement(
                 'div',
@@ -26056,7 +26105,19 @@ var App = function (_Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'f2 mb5 center tc' },
-                'Recent Projects'
+                _react2.default.createElement(
+                  'div',
+                  { className: 'strike-through-wrapper' },
+                  _react2.default.createElement('div', { className: 'strike-through-first' }),
+                  _react2.default.createElement('div', { className: 'strike-through-second' }),
+                  _react2.default.createElement(
+                    'span',
+                    null,
+                    'Recent'
+                  ),
+                  _react2.default.createElement('div', null)
+                ),
+                ' Projects'
               ),
               _react2.default.createElement(
                 'div',
@@ -26064,30 +26125,50 @@ var App = function (_Component) {
                 _react2.default.createElement(
                   'div',
                   { className: 'mw6 pointer', role: 'button', onClick: function onClick() {
-                      return _this2.setState({ showGotcha: true });
+                      return _this3.setState({ showGotcha: true });
                     } },
                   _react2.default.createElement('img', { src: '/images/gotcha-login-1.png', alt: 'gotcha' })
                 ),
                 this.state.showGotcha && _react2.default.createElement(
                   _ProjectModal2.default,
                   { onClick: function onClick() {
-                      return _this2.setState({ showGotcha: false });
+                      return _this3.setState({ showGotcha: false });
                     } },
                   _react2.default.createElement(_GotchaModal2.default, null)
                 ),
                 _react2.default.createElement(
                   'div',
                   { className: 'mw6 pointer', role: 'button', onClick: function onClick() {
-                      return _this2.setState({ showMylai: true });
+                      return _this3.setState({ showMylai: true });
                     } },
                   _react2.default.createElement('img', { src: '/images/mylai-login-1.png', alt: 'mylai' })
                 ),
                 this.state.showMylai && _react2.default.createElement(
                   _ProjectModal2.default,
                   { onClick: function onClick() {
-                      return _this2.setState({ showMylai: false });
+                      return _this3.setState({ showMylai: false });
                     } },
                   _react2.default.createElement(_MylaiModal2.default, null)
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'mw8 center pl3 pr3 w-100' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'flex flex-column mt6 center' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'f2 mb5 center' },
+                    'Contact'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'flex mb3 justify-between flex-wrap' },
+                    _react2.default.createElement(_RenderIcon2.default, { wide: true, iconName: 'phoneicon', toolName: '704.287.1152' }),
+                    _react2.default.createElement(_RenderIcon2.default, { wide: true, iconName: 'emailicon', toolName: 'london.andrewd@gmail.com' }),
+                    _react2.default.createElement(_RenderIcon2.default, { wide: true, iconName: 'linkedinicon', toolName: '@alondon' })
+                  )
                 )
               )
             )
@@ -26121,13 +26202,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var RenderIcon = function RenderIcon(_ref) {
   var iconName = _ref.iconName,
-      toolName = _ref.toolName;
+      toolName = _ref.toolName,
+      wide = _ref.wide;
   return _react2.default.createElement(
     "div",
     { className: "flex-1 flex justify-center" },
     _react2.default.createElement(
       "div",
-      { className: "ml3 mr3 flex relative flex-wrap icon-wrapper mb3" },
+      { className: "ml3 mr3 flex relative flex-wrap " + (wide ? "icon-wide" : "icon-wrapper") + " mb3" },
       _react2.default.createElement("div", { className: "skill-icon", style: { backgroundImage: "url('/images/" + iconName + ".png')" } }),
       _react2.default.createElement(
         "div",
@@ -44520,7 +44602,8 @@ exports.default = ZoomOut;
 var Colors = {
   // Brand
   brandPrimary: 'rgba(55, 115, 161, 0.5)',
-  brandSecondary: '#rgba(34, 143, 83, 0.5)',
+  brandSolid: 'rgba(55, 115, 161, 1)',
+  brandSecondary: 'rgba(34, 143, 83, 0.5)',
 
   // Basic
   black: '#000000',
@@ -44908,33 +44991,6 @@ exports.default = MylaiModal;
 
 /***/ }),
 /* 505 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var test = function test() {
-  return _react2.default.createElement(
-    'div',
-    null,
-    'doot'
-  );
-};
-
-exports.default = test;
-
-/***/ }),
-/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

@@ -6,7 +6,7 @@ import GotchaModal from './GotchaModal';
 import MylaiModal from './MylaiModal';
 
 console.log("👋 Hey there!");
-console.log("Looking for the source code? Find it on Github: https://github.com/0132143/0132143.github.io");
+console.log("Looking for the source code? It's not the most up to date but you can find it on Github: https://github.com/adlondon/adlondon.github.io");
 
 class App extends Component {
   constructor(props) {
@@ -14,27 +14,41 @@ class App extends Component {
     this.state = {
       showGotcha: false,
       showMylai: false,
+      loaded: false,
     };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ loaded: true });
+    }, 2000);
   }
 
   render() {
     return (
       <div>
+        <div className={`loading-wrapper ${this.state.loaded ? "loaded" : ""}`}>
+          <div className="loading"><div /><div /><div /><div /></div>
+        </div>
         <div>
+          <div className="absolute right-0 flex">
+            <a className="pa3" rel="noopener noreferrer" target="_blank" href="https://github.com/adlondon">Github</a>
+            <a className="pa3" rel="noopener noreferrer" target="_blank" href="/images/Andrew London Resume - 2021.pdf">Resume</a>
+          </div>
           <div className="vh-100 w-100 white bg-brand-primary flex items-center pa4">
             <div className="flex vh-100 mw8 center flex-column-m flex-row-l flex-column">
               <div className="flex flex-1 flex-column justify-center-l justify-end-m justify-end white flex-wrap">
                 <div className="f2">Hi, I'm Andrew</div>
-                <div className="mt3">I'm a software developer living in beautiful Charleston, SC.</div>
-                <div className="mt3">Currently, I work at <a rel="noopener noreferrer" target="_blank" href="https://launchpeer.com">Launchpeer</a>, building awesome web and mobile applications with Javascript.</div>
-                <div className="mt3">In my free time, I enjoy woodworking, bike building, and spending time with my wife and newborn daughter.</div>
+                <div className="mt3">I'm a software engineer living in beautiful Chattanooga, TN.</div>
+                <div className="mt3">Currently, I work at <a rel="noopener noreferrer" target="_blank" href="https://rhinogram.com">Rhinogram</a>, building HIPAA compliant communication tools for the healthcare sector.</div>
+                <div className="mt3">In my free time, I enjoy <a rel="noopener noreferrer" target="_blank" href="https://instagram.com/adlondon">woodworking</a>, <a rel="noopener noreferrer" target="_blank" href="https://www.highpointclimbing.com/chattanooga/chattanooga-main">rock climbing</a>, and making stuff at <a rel="noopener noreferrer" target="_blank" href="https://www.chattlab.org//">Chatt*Lab</a>.</div>
               </div>
               <div className="flex-1 flex items-end justify-end mt5"><img className=" mw5-m mw0-l w-80 headshot" src="/images/headshotfinal.png" alt="headshot" /></div>
             </div>
           </div>
           <div className="mw8 center pl3 pr3">
             <div className="flex flex-column mt6 center">
-              <div className="f2 mb5 center">Tools I Use</div>
+              <div className="f2 mb5 center">Stack</div>
               <div className="flex mb3 justify-between flex-wrap">
                 <RenderIcon iconName="reacticon" toolName="React" />
                 <RenderIcon iconName="es6icon" toolName="ECMA Script 6" />
@@ -58,7 +72,7 @@ class App extends Component {
               </div>
             </div>
             <div className="flex flex-column mt6 center">
-              <div className="f2 mb5 center tc">Recent Projects</div>
+              <div className="f2 mb5 center tc"><div className="strike-through-wrapper"><div className="strike-through-first" /><div className="strike-through-second" /><span>Recent</span><div /></div> Projects</div>
               <div className="flex">
                 <div className="mw6 pointer" role="button" onClick={() => this.setState({ showGotcha: true })}><img src="/images/gotcha-login-1.png" alt="gotcha" /></div>
                 {this.state.showGotcha &&
@@ -72,6 +86,16 @@ class App extends Component {
                     <MylaiModal />
                   </ProjectModal>
                 }
+              </div>
+              <div className="mw8 center pl3 pr3 w-100">
+                <div className="flex flex-column mt6 center">
+                  <div className="f2 mb5 center">Contact</div>
+                  <div className="flex mb3 justify-between flex-wrap">
+                    <RenderIcon wide iconName="phoneicon" toolName="704.287.1152" />
+                    <RenderIcon wide iconName="emailicon" toolName="london.andrewd@gmail.com" />
+                    <RenderIcon wide iconName="linkedinicon" toolName="@alondon" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

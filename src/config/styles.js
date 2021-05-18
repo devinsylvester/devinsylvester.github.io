@@ -3,7 +3,8 @@
 var Colors = {
   // Brand
   brandPrimary: 'rgba(55, 115, 161, 0.5)',
-  brandSecondary: '#rgba(34, 143, 83, 0.5)',
+  brandSolid: 'rgba(55, 115, 161, 1)',
+  brandSecondary: 'rgba(34, 143, 83, 0.5)',
 
   // Basic
   black: '#000000',
