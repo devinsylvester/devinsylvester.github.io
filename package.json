@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio site for Andrew London",
   "main": "index.js",
-  "homepage": "https://0132143.github.io/portfolio",
+  "homepage": "https://adlondon.github.io",
   "engines": {
     "node": "8.9.3",
     "npm": "5.5.1"
