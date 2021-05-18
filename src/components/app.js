@@ -88,7 +88,7 @@ class App extends Component {
                 }
               </div>
               <div className="mw8 center pl3 pr3 w-100">
-                <div className="flex flex-column mt6 center">
+                <div className="flex flex-column mt6 center items-center">
                   <div className="f2 mb5 center">Contact</div>
                   <div className="flex mb3 justify-between flex-wrap">
                     <RenderIcon wide iconName="phoneicon" toolName="704.287.1152" />
