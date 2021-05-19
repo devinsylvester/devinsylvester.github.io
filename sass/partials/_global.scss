@@ -155,11 +155,12 @@ a {
 }
 
 .icon-wrapper {
-  width: 100px;
+  width: 120px;
 }
 
 .icon-wide {
   width: 100%;
+  min-width: 180px;
 }
 
 .reacticon,
@@ -231,6 +232,14 @@ a {
 
 .parseicon {
   color: #159cee;
+}
+
+.sqlicon {
+  color: #e2a042;
+}
+
+.htmlicon {
+  color: #f16529;
 }
 
 .strike-through-wrapper {

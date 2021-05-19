@@ -51,24 +51,15 @@ class App extends Component {
               <div className="f2 mb5 center">Stack</div>
               <div className="flex mb3 justify-between flex-wrap">
                 <RenderIcon iconName="reacticon" toolName="React" />
-                <RenderIcon iconName="es6icon" toolName="ECMA Script 6" />
+                <RenderIcon iconName="angularicon" toolName="AngularJS" />
                 <RenderIcon iconName="rnicon" toolName="React Native" />
-                <RenderIcon iconName="parseicon" toolName="Parse Server" />
-                <RenderIcon iconName="nodeicon" toolName="Node" />
+                <RenderIcon iconName="sqlicon" toolName="SQL" />
               </div>
               <div className="flex mb3 justify-between flex-wrap">
-                <RenderIcon iconName="giticon" toolName="git" />
-                <RenderIcon iconName="webpackicon" toolName="webpack" />
-                <RenderIcon iconName="gulpicon" toolName="Gulp" />
-                <RenderIcon iconName="androidicon" toolName="Android Studio" />
-                <RenderIcon iconName="xcodeicon" toolName="Xcode" />
-              </div>
-              <div className="flex mb3 justify-between flex-wrap">
+                <RenderIcon iconName="htmlicon" toolName="HTML 5" />
+                <RenderIcon iconName="es6icon" toolName="ECMA Script 6" />
                 <RenderIcon iconName="css3icon" toolName="CSS 3" />
-                <RenderIcon iconName="tachyonsicon" toolName="tachyons" />
-                <RenderIcon iconName="sassicon" toolName="Sass" />
-                <RenderIcon iconName="lessicon" toolName="less" />
-                <RenderIcon iconName="bootstrapicon" toolName="Bootstrap" />
+                <RenderIcon iconName="nodeicon" toolName="Node" />
               </div>
             </div>
             <div className="flex flex-column mt6 center">
