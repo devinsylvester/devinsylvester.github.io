@@ -24,6 +24,17 @@ class App extends Component {
     }, 2000);
   }
 
+  handleLink(button) {
+    console.log(`button`, button);
+    if (button === 'phone') {
+      document.location.href = "tel:7042871152";
+    } else if (button === 'email') {
+      document.location.href = "mailto:london.andrewd@gmail.com";
+    } else {
+      window.open('www.linkedin.com/in/alondon');
+    }
+  }
+
   render() {
     return (
       <div>
@@ -81,10 +92,10 @@ class App extends Component {
               <div className="mw8 center pl3 pr3 w-100">
                 <div className="flex flex-column mt6 center items-center">
                   <div className="f2 mb5 center">Contact</div>
-                  <div className="flex mb3 justify-between flex-wrap">
-                    <RenderIcon wide iconName="phoneicon" toolName="704.287.1152" />
-                    <RenderIcon wide iconName="emailicon" toolName="london.andrewd@gmail.com" />
-                    <RenderIcon wide iconName="linkedinicon" toolName="@alondon" />
+                  <div className="flex mb3 justify-between flex-wrap pointer">
+                    <RenderIcon handleClick={() => this.handleLink('phone')} wide iconName="phoneicon" toolName="704.287.1152" />
+                    <RenderIcon handleClick={() => this.handleLink('email')} wide iconName="emailicon" toolName="london.andrewd@gmail.com" />
+                    <RenderIcon handleClick={() => this.handleLink('linkedin')} wide iconName="linkedinicon" toolName="@alondon" />
                   </div>
                 </div>
               </div>
