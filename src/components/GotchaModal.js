@@ -27,7 +27,7 @@ const GotchaModal = () => (
         </div>
       </div>
       <div className="flex-1 ml4-l ml pb4-m pb4-l">
-        Gotcha Rides was the first app where I really cut my teeth on React Native development. The scope of the project ended up being pretty big, with a public facing passenger app, an internal driver app, and a web based admin portal. I was responsible for leading the front end team in planning, developing, and deploying the applications throughout the project lifecycle. I had the opportunity to tackle some really interesting problems, like updating branding for each vehicle based on their sponsor, and handling driver location accuracy across different devices.
+        Gotcha Rides was the first app where I really cut my teeth on React Native development. The scope of the project ended up being pretty big, with a public facing passenger app, an internal driver app, and a web based admin portal. I was responsible for leading the front end team in planning, developing, and deploying the applications throughout the project lifecycle. I had the opportunity to tackle some really interesting problems, like real-time dynamic ride branding, and handling driver location accuracy across different devices.
       </div>
     </div>
     <div className="flex-1">

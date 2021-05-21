@@ -41,21 +41,21 @@ class App extends Component {
                 <div className="f2">Hi, I'm Andrew</div>
                 <div className="mt3">I'm a software engineer living in beautiful Chattanooga, TN.</div>
                 <div className="mt3">Currently, I work at <a rel="noopener noreferrer" target="_blank" href="https://rhinogram.com">Rhinogram</a>, building HIPAA compliant communication tools for the healthcare sector.</div>
-                <div className="mt3">In my free time, I enjoy <a rel="noopener noreferrer" target="_blank" href="https://instagram.com/adlondon">woodworking</a>, <a rel="noopener noreferrer" target="_blank" href="https://www.highpointclimbing.com/chattanooga/chattanooga-main">rock climbing</a>, and making stuff at <a rel="noopener noreferrer" target="_blank" href="https://www.chattlab.org//">Chatt*Lab</a>.</div>
+                <div className="mt3">In my free time, I enjoy <a rel="noopener noreferrer" target="_blank" href="https://instagram.com/adlondon">woodworking</a>, <a rel="noopener noreferrer" target="_blank" href="https://www.highpointclimbing.com/chattanooga/chattanooga-main">rock climbing</a>, and creating at <a rel="noopener noreferrer" target="_blank" href="https://www.chattlab.org//">Chatt*Lab</a>.</div>
               </div>
               <div className="flex-1 flex items-end justify-end mt5"><img className=" mw5-m mw0-l w-80 headshot" src="/images/headshotfinal.png" alt="headshot" /></div>
             </div>
           </div>
           <div className="mw8 center pl3 pr3">
             <div className="flex flex-column mt6 center">
-              <div className="f2 mb5 center">Stack</div>
-              <div className="flex mb3 justify-between flex-wrap">
+              <div className="f2 mb5 center">What I know best</div>
+              <div className="flex justify-between flex-wrap">
                 <RenderIcon iconName="reacticon" toolName="React" />
                 <RenderIcon iconName="angularicon" toolName="AngularJS" />
                 <RenderIcon iconName="rnicon" toolName="React Native" />
                 <RenderIcon iconName="sqlicon" toolName="SQL" />
               </div>
-              <div className="flex mb3 justify-between flex-wrap">
+              <div className="flex justify-between flex-wrap">
                 <RenderIcon iconName="htmlicon" toolName="HTML 5" />
                 <RenderIcon iconName="es6icon" toolName="ECMA Script 6" />
                 <RenderIcon iconName="css3icon" toolName="CSS 3" />
@@ -64,7 +64,7 @@ class App extends Component {
             </div>
             <div className="flex flex-column mt6 center">
               <div className="f2 mb5 center tc"><div className="strike-through-wrapper"><div className="strike-through-first" /><div className="strike-through-second" /><span>Recent</span><div /></div> Projects</div>
-              <div className="flex">
+              <div className="flex z-1">
                 <div className="mw6 pointer" role="button" onClick={() => this.setState({ showGotcha: true })}><img src="/images/gotcha-login-1.png" alt="gotcha" /></div>
                 {this.state.showGotcha &&
                   <ProjectModal onClick={() => this.setState({ showGotcha: false })}>

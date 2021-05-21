@@ -27,7 +27,7 @@ const MylaiModal = () => (
         </div>
       </div>
       <div className="flex-1 ml4-l ml pb4-m pb4-l">
-        Mylai offered some really exciting opportunites for me as a developer. It ended up being the largest project that I have developed entirely on my own, and was the first mobile application I wrote with two user roles that allowed for two totally different functionalities within the same app.
+        Mylai offered some really exciting opportunites for me as a developer. At the time it was the largest project that I had developed entirely on my own, and was the first mobile application I wrote with multiple user roles that allowed for entirely separate functionalities within the same app.
         The project consisted of a client app, trainer app, and admin portal, and utilized sockets, geolocation, and push notifications for a rich user experience.
       </div>
     </div>

@@ -29,7 +29,7 @@ a {
   top: 0;
   bottom: 0;
   background-color: $brandSolid;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,7 +253,7 @@ a {
     background-color: red;
     top: 50%;
     opacity: 0.8;
-    rotate: 7deg;
+    transform: rotate(7deg);
   }
   .strike-through-second {
     position: absolute;
@@ -263,6 +263,6 @@ a {
     background-color: red;
     top: 50%;
     opacity: 0.8;
-    rotate: -7deg;
+    transform: rotate(-7deg);
   }
 }
