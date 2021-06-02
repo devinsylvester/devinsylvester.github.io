@@ -44,7 +44,7 @@ class App extends Component {
         <div>
           <div className="absolute right-0 flex">
             <a className="pa3" rel="noopener noreferrer" target="_blank" href="https://github.com/adlondon">Github</a>
-            <a className="pa3" rel="noopener noreferrer" target="_blank" href="/images/Andrew London Resume - 2021.pdf">Resume</a>
+            <a className="pa3" rel="noopener noreferrer" target="_blank" href="/images/Andrew London Resume 2021.pdf">Resume</a>
           </div>
           <div className="vh-100 w-100 white bg-brand-primary flex items-center pa4">
             <div className="flex vh-100 mw8 center flex-column-m flex-row-l flex-column">
@@ -62,9 +62,9 @@ class App extends Component {
               <div className="f2 mb5 center">What I know best</div>
               <div className="flex justify-between flex-wrap">
                 <RenderIcon iconName="reacticon" toolName="React" />
-                <RenderIcon iconName="angularicon" toolName="AngularJS" />
                 <RenderIcon iconName="rnicon" toolName="React Native" />
                 <RenderIcon iconName="sqlicon" toolName="SQL" />
+                <RenderIcon iconName="cypressicon" toolName="Cypress" />
               </div>
               <div className="flex justify-between flex-wrap">
                 <RenderIcon iconName="htmlicon" toolName="HTML 5" />
