@@ -63,7 +63,7 @@ class App extends Component {
                 <RenderIcon iconName="reacticon" toolName="React" />
                 <RenderIcon iconName="rnicon" toolName="React Native" />
                 <RenderIcon iconName="sqlicon" toolName="SQL" />
-                <RenderIcon iconName="cypressicon" toolName="Cypress" />
+                <RenderIcon iconName="cypressIcon" toolName="Cypress" />
               </div>
               <div className="flex justify-between flex-wrap">
                 <RenderIcon iconName="htmlicon" toolName="HTML 5" />
