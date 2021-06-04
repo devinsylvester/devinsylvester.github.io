@@ -25,7 +25,6 @@ class App extends Component {
   }
 
   handleLink(button) {
-    console.log(`button`, button);
     if (button === 'phone') {
       document.location.href = "tel:7042871152";
     } else if (button === 'email') {
