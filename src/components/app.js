@@ -6,7 +6,7 @@ import GotchaModal from './GotchaModal';
 import MylaiModal from './MylaiModal';
 
 console.log("👋 Hey there!");
-console.log("Looking for the source code? It's not the most up to date but you can find it on Github: https://github.com/adlondon/adlondon.github.io");
+console.log("Looking for the source code? It's not the most up to date but you can find it on Github: https://github.com/devinsylvester/devinsylvester.github.io");
 
 class App extends Component {
   constructor(props) {
@@ -26,11 +26,11 @@ class App extends Component {
 
   handleLink(button) {
     if (button === 'phone') {
-      document.location.href = "tel:7042871152";
+      document.location.href = "tel:3108838321";
     } else if (button === 'email') {
-      document.location.href = "mailto:london.andrewd@gmail.com";
+      document.location.href = "mailto:dajs64@gmail.com";
     } else {
-      window.open('www.linkedin.com/in/alondon');
+      window.open('www.linkedin.com/in/devin-sylvester');
     }
   }
 
@@ -42,16 +42,16 @@ class App extends Component {
         </div>
         <div>
           <div className="absolute right-0 flex">
-            <a className="pa3" rel="noopener noreferrer" target="_blank" href="https://github.com/adlondon">Github</a>
-            <a className="pa3" rel="noopener noreferrer" target="_blank" href="/images/Andrew London Resume 2021.pdf">Resume</a>
+            <a className="pa3" rel="noopener noreferrer" target="_blank" href="https://github.com/devinsylvester">Github</a>
+            <a className="pa3" rel="noopener noreferrer" target="_blank" href="/images/Devin Sylvester Resume 6_13_2022.pdf">Resume</a>
           </div>
           <div className="vh-100 w-100 white bg-brand-primary flex items-center pa4">
             <div className="flex vh-100 mw8 center flex-column-m flex-row-l flex-column">
               <div className="flex flex-1 flex-column justify-center-l justify-end-m justify-end white flex-wrap">
-                <div className="f2">Hi, I'm Andrew</div>
-                <div className="mt3">I'm a software engineer living in beautiful Chattanooga, TN.</div>
-                <div className="mt3">Currently, I work at <a rel="noopener noreferrer" target="_blank" href="https://rhinogram.com">Rhinogram</a>, building HIPAA compliant communication tools for the healthcare sector.</div>
-                <div className="mt3">In my free time, I enjoy <a rel="noopener noreferrer" target="_blank" href="https://instagram.com/adlondon">woodworking</a>, <a rel="noopener noreferrer" target="_blank" href="https://www.highpointclimbing.com/chattanooga/chattanooga-main">rock climbing</a>, and creating at <a rel="noopener noreferrer" target="_blank" href="https://www.chattlab.org//">Chatt*Lab</a>.</div>
+                <div className="f2">Hi, I'm Devin</div>
+                <div className="mt3">I'm a software engineer living in beautiful Los Angeles, CA.</div>
+                <div className="mt3">Currently, looking for a junior develper position<a rel="noopener noreferrer" target="_blank" href="https://generalassemb.ly/education/software-engineering-immersive/atlanta"></a>, a recent General Assembly Graduate I'm seeking remote work but willing to relocate.</div>
+                <div className="mt3">In my free time, I enjoy <a rel="noopener noreferrer" target="_blank" href="www.instagram.com/dev24/">family time</a>, <a rel="noopener noreferrer" target="_blank" href="https://www.othisitraining.com/">weightlifting</a>, playing video games <a rel="noopener noreferrer" target="_blank" href="https://store.world-8.com/">Chatt*Lab</a>.</div>
               </div>
               <div className="flex-1 flex items-end justify-end mt5"><img className=" mw5-m mw0-l w-80 headshot" src="/images/headshotfinal.png" alt="headshot" /></div>
             </div>
@@ -61,13 +61,13 @@ class App extends Component {
               <div className="f2 mb5 center">What I know best</div>
               <div className="flex justify-between flex-wrap">
                 <RenderIcon iconName="reacticon" toolName="React" />
-                <RenderIcon iconName="rnicon" toolName="React Native" />
+                {/* <RenderIcon iconName="rnicon" toolName="React Native" /> */}
                 <RenderIcon iconName="sqlicon" toolName="SQL" />
-                <RenderIcon iconName="cypressIcon" toolName="Cypress" />
+                {/* <RenderIcon iconName="cypressIcon" toolName="Cypress" /> */}
               </div>
               <div className="flex justify-between flex-wrap">
                 <RenderIcon iconName="htmlicon" toolName="HTML 5" />
-                <RenderIcon iconName="es6icon" toolName="ECMA Script 6" />
+                {/* <RenderIcon iconName="es6icon" toolName="ECMA Script 6" /> */}
                 <RenderIcon iconName="css3icon" toolName="CSS 3" />
                 <RenderIcon iconName="nodeicon" toolName="Node" />
               </div>
@@ -92,9 +92,9 @@ class App extends Component {
                 <div className="flex flex-column mt6 center items-center">
                   <div className="f2 mb5 center">Contact</div>
                   <div className="flex mb3 justify-between flex-wrap pointer">
-                    <RenderIcon handleClick={() => this.handleLink('phone')} wide iconName="phoneicon" toolName="704.287.1152" />
-                    <RenderIcon handleClick={() => this.handleLink('email')} wide iconName="emailicon" toolName="london.andrewd@gmail.com" />
-                    <RenderIcon handleClick={() => this.handleLink('linkedin')} wide iconName="linkedinicon" toolName="@alondon" />
+                    <RenderIcon handleClick={() => this.handleLink('phone')} wide iconName="phoneicon" toolName="310.883.8321" />
+                    <RenderIcon handleClick={() => this.handleLink('email')} wide iconName="emailicon" toolName="dajs64@gmail.com" />
+                    <RenderIcon handleClick={() => this.handleLink('linkedin')} wide iconName="linkedinicon" toolName="@devin-sylvester" />
                   </div>
                 </div>
               </div>

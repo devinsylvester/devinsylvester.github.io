@@ -14115,8 +14115,6 @@ var _app = __webpack_require__(228);
 
 var _app2 = _interopRequireDefault(_app);
 
-__webpack_require__(505);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(
@@ -25935,7 +25933,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 console.log("👋 Hey there!");
-console.log("Looking for the source code? It's not the most up to date but you can find it on Github: https://github.com/adlondon/adlondon.github.io");
+console.log("Looking for the source code? It's not the most up to date but you can find it on Github: https://github.com/devinsylvester/devinsylvester.github.io");
 
 var App = function (_Component) {
   _inherits(App, _Component);
@@ -25966,11 +25964,11 @@ var App = function (_Component) {
     key: 'handleLink',
     value: function handleLink(button) {
       if (button === 'phone') {
-        document.location.href = "tel:7042871152";
+        document.location.href = "tel:3108838321";
       } else if (button === 'email') {
-        document.location.href = "mailto:london.andrewd@gmail.com";
+        document.location.href = "mailto:dajs64@gmail.com";
       } else {
-        window.open('www.linkedin.com/in/alondon');
+        window.open('www.linkedin.com/in/devin-sylvester');
       }
     }
   }, {
@@ -26001,12 +25999,12 @@ var App = function (_Component) {
             { className: 'absolute right-0 flex' },
             _react2.default.createElement(
               'a',
-              { className: 'pa3', rel: 'noopener noreferrer', target: '_blank', href: 'https://github.com/adlondon' },
+              { className: 'pa3', rel: 'noopener noreferrer', target: '_blank', href: 'https://github.com/devinsylvester' },
               'Github'
             ),
             _react2.default.createElement(
               'a',
-              { className: 'pa3', rel: 'noopener noreferrer', target: '_blank', href: '/images/Andrew London Resume 2021.pdf' },
+              { className: 'pa3', rel: 'noopener noreferrer', target: '_blank', href: '/images/Devin Sylvester Resume 6_13_2022.pdf' },
               'Resume'
             )
           ),
@@ -26022,23 +26020,19 @@ var App = function (_Component) {
                 _react2.default.createElement(
                   'div',
                   { className: 'f2' },
-                  'Hi, I\'m Andrew'
+                  'Hi, I\'m Devin'
                 ),
                 _react2.default.createElement(
                   'div',
                   { className: 'mt3' },
-                  'I\'m a software engineer living in beautiful Chattanooga, TN.'
+                  'I\'m a software engineer living in beautiful Los Angeles, CA.'
                 ),
                 _react2.default.createElement(
                   'div',
                   { className: 'mt3' },
-                  'Currently, I work at ',
-                  _react2.default.createElement(
-                    'a',
-                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://rhinogram.com' },
-                    'Rhinogram'
-                  ),
-                  ', building HIPAA compliant communication tools for the healthcare sector.'
+                  'Currently, looking for a junior develper position',
+                  _react2.default.createElement('a', { rel: 'noopener noreferrer', target: '_blank', href: 'https://generalassemb.ly/education/software-engineering-immersive/atlanta' }),
+                  ', a recent General Assembly Graduate I\'m seeking remote work but willing to relocate.'
                 ),
                 _react2.default.createElement(
                   'div',
@@ -26046,19 +26040,19 @@ var App = function (_Component) {
                   'In my free time, I enjoy ',
                   _react2.default.createElement(
                     'a',
-                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://instagram.com/adlondon' },
-                    'woodworking'
+                    { rel: 'noopener noreferrer', target: '_blank', href: 'www.instagram.com/dev24/' },
+                    'family time'
                   ),
                   ', ',
                   _react2.default.createElement(
                     'a',
-                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://www.highpointclimbing.com/chattanooga/chattanooga-main' },
-                    'rock climbing'
+                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://www.othisitraining.com/' },
+                    'weightlifting'
                   ),
-                  ', and creating at ',
+                  ', playing video games ',
                   _react2.default.createElement(
                     'a',
-                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://www.chattlab.org//' },
+                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://store.world-8.com/' },
                     'Chatt*Lab'
                   ),
                   '.'
@@ -26086,15 +26080,12 @@ var App = function (_Component) {
                 'div',
                 { className: 'flex justify-between flex-wrap' },
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'reacticon', toolName: 'React' }),
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'rnicon', toolName: 'React Native' }),
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'sqlicon', toolName: 'SQL' }),
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'cypressIcon', toolName: 'Cypress' })
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'sqlicon', toolName: 'SQL' })
               ),
               _react2.default.createElement(
                 'div',
                 { className: 'flex justify-between flex-wrap' },
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'htmlicon', toolName: 'HTML 5' }),
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'es6icon', toolName: 'ECMA Script 6' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'css3icon', toolName: 'CSS 3' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'nodeicon', toolName: 'Node' })
               )
@@ -26167,13 +26158,13 @@ var App = function (_Component) {
                     { className: 'flex mb3 justify-between flex-wrap pointer' },
                     _react2.default.createElement(_RenderIcon2.default, { handleClick: function handleClick() {
                         return _this3.handleLink('phone');
-                      }, wide: true, iconName: 'phoneicon', toolName: '704.287.1152' }),
+                      }, wide: true, iconName: 'phoneicon', toolName: '310.883.8321' }),
                     _react2.default.createElement(_RenderIcon2.default, { handleClick: function handleClick() {
                         return _this3.handleLink('email');
-                      }, wide: true, iconName: 'emailicon', toolName: 'london.andrewd@gmail.com' }),
+                      }, wide: true, iconName: 'emailicon', toolName: 'dajs64@gmail.com' }),
                     _react2.default.createElement(_RenderIcon2.default, { handleClick: function handleClick() {
                         return _this3.handleLink('linkedin');
-                      }, wide: true, iconName: 'linkedinicon', toolName: '@alondon' })
+                      }, wide: true, iconName: 'linkedinicon', toolName: '@devin-sylvester' })
                   )
                 )
               )
@@ -44997,14 +44988,6 @@ var MylaiModal = function MylaiModal() {
 };
 
 exports.default = MylaiModal;
-
-/***/ }),
-/* 505 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-// removed by extract-text-webpack-plugin
-
 
 /***/ })
 /******/ ]);

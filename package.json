@@ -1,9 +1,9 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Portfolio site for Andrew London",
+  "description": "Portfolio site for Devin Sylvester",
   "main": "index.js",
-  "homepage": "https://adlondon.github.io",
+  "homepage": "https://devinsylvester.github.io",
   "engines": {
     "node": "8.9.3",
     "npm": "5.5.1"
@@ -36,20 +36,15 @@
     "babel-preset-react": "^6.1.18",
     "babel-preset-stage-1": "^6.1.18",
     "concurrently": "^3.5.0",
-    "css-loader": "^0.28.7",
     "express": "^4.15.4",
     "extract-text-webpack-plugin": "^3.0.0",
     "jsdom": "^8.1.0",
-    "node-sass": "^4.12",
-    "postcss-loader": "^2.0.6",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-feather": "^1.1.1",
     "react-router": "^2.8.1",
     "rhinostyle": "^1.10.42",
-    "sass-loader": "^6.0.6",
     "storage": "^0.2.0",
-    "style-loader": "^0.18.2",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0",
     "webpack-hot-middleware": "^2.25.0"
