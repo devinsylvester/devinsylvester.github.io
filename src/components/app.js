@@ -43,7 +43,7 @@ class App extends Component {
         <div>
           <div className="absolute right-0 flex">
             <a className="pa3" rel="noopener noreferrer" target="_blank" href="https://github.com/devinsylvester">Github</a>
-            <a className="pa3" rel="noopener noreferrer" target="_blank" href="/images/Devin Sylvester Resume 6_13_2022.pdf">Resume</a>
+            <a className="pa3" rel="noopener noreferrer" target="_blank" href="/images/Devin Sylvester Resume 7_1_2022.pdf">Resume</a>
           </div>
           <div className="vh-100 w-100 white bg-brand-primary flex items-center pa4">
             <div className="flex vh-100 mw8 center flex-column-m flex-row-l flex-column">
@@ -51,7 +51,7 @@ class App extends Component {
                 <div className="f2">Hi, I'm Devin</div>
                 <div className="mt3">I'm a software engineer living in beautiful Los Angeles, CA.</div>
                 <div className="mt3">Currently, looking for a junior develper position<a rel="noopener noreferrer" target="_blank" href="https://generalassemb.ly/education/software-engineering-immersive/atlanta"></a>, a recent General Assembly Graduate I'm seeking remote work but willing to relocate.</div>
-                <div className="mt3">In my free time, I enjoy <a rel="noopener noreferrer" target="_blank" href="www.instagram.com/dev24/">family time</a>, <a rel="noopener noreferrer" target="_blank" href="https://www.othisitraining.com/">weightlifting</a>, playing video games <a rel="noopener noreferrer" target="_blank" href="https://store.world-8.com/">Chatt*Lab</a>.</div>
+                <div className="mt3">In my free time, I enjoy <a rel="noopener noreferrer" target="_blank" href="www.instagram.com/dev24/">family time</a>, <a rel="noopener noreferrer" target="_blank" href="https://www.othisitraining.com/">weightlifting</a>, and playing video games <a rel="noopener noreferrer" target="_blank" href="https://store.world-8.com/">World-8</a>.</div>
               </div>
               <div className="flex-1 flex items-end justify-end mt5"><img className=" mw5-m mw0-l w-80 headshot" src="/images/headshotfinal.png" alt="headshot" /></div>
             </div>

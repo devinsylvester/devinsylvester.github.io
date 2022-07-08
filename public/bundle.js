@@ -26049,11 +26049,11 @@ var App = function (_Component) {
                     { rel: 'noopener noreferrer', target: '_blank', href: 'https://www.othisitraining.com/' },
                     'weightlifting'
                   ),
-                  ', playing video games ',
+                  ', and playing video games ',
                   _react2.default.createElement(
                     'a',
                     { rel: 'noopener noreferrer', target: '_blank', href: 'https://store.world-8.com/' },
-                    'Chatt*Lab'
+                    'World-8'
                   ),
                   '.'
                 )
