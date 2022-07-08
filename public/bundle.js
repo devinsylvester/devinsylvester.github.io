@@ -26004,7 +26004,7 @@ var App = function (_Component) {
             ),
             _react2.default.createElement(
               'a',
-              { className: 'pa3', rel: 'noopener noreferrer', target: '_blank', href: '/images/Devin Sylvester Resume 6_13_2022.pdf' },
+              { className: 'pa3', rel: 'noopener noreferrer', target: '_blank', href: '/images/Devin Sylvester Resume 7_1_2022.pdf' },
               'Resume'
             )
           ),
@@ -26030,9 +26030,13 @@ var App = function (_Component) {
                 _react2.default.createElement(
                   'div',
                   { className: 'mt3' },
-                  'Currently, looking for a junior develper position',
-                  _react2.default.createElement('a', { rel: 'noopener noreferrer', target: '_blank', href: 'https://generalassemb.ly/education/software-engineering-immersive/atlanta' }),
-                  ', a recent General Assembly Graduate I\'m seeking remote work but willing to relocate.'
+                  'Currently, looking for a junior develper position, a recent ',
+                  _react2.default.createElement(
+                    'a',
+                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://generalassemb.ly/education/software-engineering-immersive/atlanta' },
+                    'General Assembly'
+                  ),
+                  ', graduate I\'m seeking remote work and willing to relocate.'
                 ),
                 _react2.default.createElement(
                   'div',
