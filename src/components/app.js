@@ -73,9 +73,9 @@ class App extends Component {
               </div>
             </div>
             <div className="flex flex-column mt6 center">
-              <div className="f2 mb5 center tc"><div className="strike-through-wrapper"><div className="strike-through-first" /><div className="strike-through-second" /><span>Recent</span><div /></div> Projects</div>
+              <div className="f2 mb5 center tc"><div className="strike-through-wrapper"><div className="strike-through-first" /><div className="strike-through-second" />** <span>Recent</span><div /></div> Projects</div>
               <div className="flex z-1">
-                <div className="mw6 pointer" role="button" onClick={() => this.setState({ showGotcha: true })}><img src="/images/popcorntime1.png" alt="gotcha" /></div>
+                <div className="mw6 pointer" role="button" onClick={() => this.setState({ showGotcha: true })}><img src="/images/popcorntime1.png" href="https://sei-popcorn-time.herokuapp.com/"alt="popcorntime" /></div>
                 {this.state.showGotcha &&
                   <ProjectModal onClick={() => this.setState({ showGotcha: false })}>
                     <GotchaModal />
