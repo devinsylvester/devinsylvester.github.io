@@ -26122,7 +26122,7 @@ var App = function (_Component) {
                   { className: 'mw6 pointer', role: 'button', onClick: function onClick() {
                       return _this3.setState({ showGotcha: true });
                     } },
-                  _react2.default.createElement('img', { src: '/images/gotcha-login-1.png', alt: 'gotcha' })
+                  _react2.default.createElement('img', { src: '/images/popcorntime1.png', alt: 'gotcha' })
                 ),
                 this.state.showGotcha && _react2.default.createElement(
                   _ProjectModal2.default,
@@ -26136,7 +26136,7 @@ var App = function (_Component) {
                   { className: 'mw6 pointer', role: 'button', onClick: function onClick() {
                       return _this3.setState({ showMylai: true });
                     } },
-                  _react2.default.createElement('img', { src: '/images/mylai-login-1.png', alt: 'mylai' })
+                  _react2.default.createElement('img', { src: '/images/workoutapplogo.png', alt: 'mylai' })
                 ),
                 this.state.showMylai && _react2.default.createElement(
                   _ProjectModal2.default,
@@ -44855,7 +44855,7 @@ var MylaiModal = function MylaiModal() {
     _react2.default.createElement(
       "div",
       { className: "f2 mb4 center" },
-      "Mylai"
+      "Fitness Programmer"
     ),
     _react2.default.createElement(
       "div",
@@ -44869,12 +44869,12 @@ var MylaiModal = function MylaiModal() {
           _react2.default.createElement(
             "div",
             { className: "mr2" },
-            "Employer:"
+            "Date Created:"
           ),
           _react2.default.createElement(
             "div",
             null,
-            "Launchpeer"
+            "June 12th 2022"
           )
         ),
         _react2.default.createElement(
@@ -44888,7 +44888,7 @@ var MylaiModal = function MylaiModal() {
           _react2.default.createElement(
             "div",
             null,
-            "Location based, on demand personal training service"
+            "Simplified fitness tracker"
           )
         ),
         _react2.default.createElement(
@@ -44897,12 +44897,12 @@ var MylaiModal = function MylaiModal() {
           _react2.default.createElement(
             "div",
             { className: "mr2" },
-            "Title:"
+            "Available Platforms:"
           ),
           _react2.default.createElement(
             "div",
             null,
-            "Full Stack Developer"
+            "Web/Mobile"
           )
         ),
         _react2.default.createElement(
@@ -44916,7 +44916,7 @@ var MylaiModal = function MylaiModal() {
           _react2.default.createElement(
             "div",
             null,
-            "5 months"
+            "2 weeks"
           )
         ),
         _react2.default.createElement(
@@ -44930,14 +44930,14 @@ var MylaiModal = function MylaiModal() {
           _react2.default.createElement(
             "div",
             null,
-            "React, React Native, Parse Server"
+            "React, MongoDB"
           )
         )
       ),
       _react2.default.createElement(
         "div",
         { className: "flex-1 ml4-l ml pb4-m pb4-l" },
-        "Mylai offered some really exciting opportunites for me as a developer. At the time it was the largest project that I had developed entirely on my own, and was the first mobile application I wrote with multiple user roles that allowed for entirely separate functionalities within the same app. The project consisted of a client app, trainer app, and admin portal, and utilized sockets, geolocation, and push notifications for a rich user experience."
+        "End of the bootcamp solo project. We were graded upon a few aspects including full CRUD functionality, new technologies used, and presentation engagement."
       )
     ),
     _react2.default.createElement(
@@ -44949,9 +44949,9 @@ var MylaiModal = function MylaiModal() {
         _react2.default.createElement(
           "div",
           { className: "ma3" },
-          "Client App"
+          "Logo"
         ),
-        _react2.default.createElement("img", { src: "/images/mylai-c-full.png", alt: "gotcha" })
+        _react2.default.createElement("img", { src: "/images/workoutapplogo.png", alt: "gotcha" })
       ),
       _react2.default.createElement(
         "div",
@@ -44959,9 +44959,9 @@ var MylaiModal = function MylaiModal() {
         _react2.default.createElement(
           "div",
           { className: "ma3" },
-          "Trainer App"
+          "Create Workout"
         ),
-        _react2.default.createElement("img", { src: "/images/mylai-t-full.png", alt: "gotcha" })
+        _react2.default.createElement("img", { src: "/images/createworkoutsample.png", alt: "gotcha" })
       ),
       _react2.default.createElement(
         "div",
@@ -44969,7 +44969,7 @@ var MylaiModal = function MylaiModal() {
         _react2.default.createElement(
           "div",
           { className: "ma3" },
-          "Admin Portal"
+          "Workout Sample"
         ),
         _react2.default.createElement(
           "div",
@@ -44977,13 +44977,7 @@ var MylaiModal = function MylaiModal() {
           _react2.default.createElement(
             "div",
             { className: "mr3" },
-            _react2.default.createElement("img", { src: "/images/mylai-a-overview.png", alt: "mylai" })
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "ml3" },
-            " ",
-            _react2.default.createElement("img", { src: "/images/mylai-a-trainer.png", alt: "mylai" })
+            _react2.default.createElement("img", { src: "/images/sampleworkout.png", alt: "mylai" })
           )
         )
       )
