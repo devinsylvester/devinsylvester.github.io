@@ -75,13 +75,13 @@ class App extends Component {
             <div className="flex flex-column mt6 center">
               <div className="f2 mb5 center tc"><div className="strike-through-wrapper"><div className="strike-through-first" /><div className="strike-through-second" /><span>Recent</span><div /></div> Projects</div>
               <div className="flex z-1">
-                <div className="mw6 pointer" role="button" onClick={() => this.setState({ showGotcha: true })}><img src="/images/gotcha-login-1.png" alt="gotcha" /></div>
+                <div className="mw6 pointer" role="button" onClick={() => this.setState({ showGotcha: true })}><img src="/images/popcorntime1.png" alt="gotcha" /></div>
                 {this.state.showGotcha &&
                   <ProjectModal onClick={() => this.setState({ showGotcha: false })}>
                     <GotchaModal />
                   </ProjectModal>
                 }
-                <div className="mw6 pointer" role="button" onClick={() => this.setState({ showMylai: true })}><img src="/images/mylai-login-1.png" alt="mylai" /></div>
+                <div className="mw6 pointer" role="button" onClick={() => this.setState({ showMylai: true })}><img src="/images/workoutapplogo.png" alt="mylai" /></div>
                 {this.state.showMylai &&
                   <ProjectModal onClick={() => this.setState({ showMylai: false })}>
                     <MylaiModal />
