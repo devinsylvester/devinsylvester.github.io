@@ -27,23 +27,23 @@ const MylaiModal = () => (
         </div>
       </div>
       <div className="flex-1 ml4-l ml pb4-m pb4-l">
-        End of the bootcamp solo project. We were graded upon a few aspects including full CRUD functionality, new technologies used, and presentation engagement. My personal goal with the project was to create a fitness app where individuals could see what others were doing and get inspired, spark interest or motivate. 
+        End of the bootcamp solo project. We were graded upon a few aspects including full CRUD functionality, new technologies used, and presentation engagement. My personal goal with the project was to create a fitness app where individuals could see what others were doing and get inspired, spark interest or motivate.
       </div>
     </div>
     <div className="flex-1">
       <div className="center mb5">
         <div className="ma3">Logo</div>
-        <img src="/images/workoutapplogo.png" alt="gotcha" />
+        <img src="/images/workoutapp1.png" alt="gotcha" />
       </div>
       <div className="center mb5">
         <div className="ma3">Create Workout</div>
-        <img src="/images/createworkoutsample.png" alt="gotcha" />
+        <img src="/images/workoutapp2.png" alt="gotcha" />
       </div>
       <div className="center mb5">
         <div className="ma3">Workout Sample</div>
         <div className="flex justify-between">
-          <div className="mr3"><img src="/images/sampleworkout.png" alt="mylai" /></div>
-          {/* <div className="ml3"> <img src="/images/mylai-a-trainer.png" alt="mylai" /></div> */}
+          <div className="mr3"><img src="/images/workoutapp3.png" alt="mylai" /></div>
+          <div className="ml4"> <img src="/images/workoutapp4.png" alt="mylai" /></div>
         </div>
       </div>
     </div>
