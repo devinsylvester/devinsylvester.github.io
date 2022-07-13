@@ -27,7 +27,7 @@ const MylaiModal = () => (
         </div>
       </div>
       <div className="flex-1 ml4-l ml pb4-m pb4-l">
-        End of the bootcamp solo project. We were graded upon a few aspects including full CRUD functionality, new technologies used, and presentation engagement. 
+        End of the bootcamp solo project. We were graded upon a few aspects including full CRUD functionality, new technologies used, and presentation engagement. My personal goal with the project was to create a fitness app where individuals could see what others were doing and get inspired, spark interest or motivate. 
       </div>
     </div>
     <div className="flex-1">

@@ -68,7 +68,7 @@ class App extends Component {
               <div className="flex justify-between flex-wrap">
                 <RenderIcon iconName="htmlicon" toolName="HTML 5" />
                 {/* <RenderIcon iconName="es6icon" toolName="ECMA Script 6" /> */}
-                <RenderIcon iconName="css3icon" toolName="CSS 3" />
+                <RenderIcon iconName="css3icon" toolName="CSS" />
                 <RenderIcon iconName="nodeicon" toolName="Node" />
               </div>
             </div>
