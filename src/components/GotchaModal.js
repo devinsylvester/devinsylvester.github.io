@@ -19,11 +19,11 @@ const GotchaModal = () => (
         </div>
         <div className="flex mb3">
           <div className="mr2">Duration:</div>
-          <div>9 months</div>
+          <div>1 week</div>
         </div>
         <div className="flex mb5">
           <div className="mr2">Stack:</div>
-          <div>React, React Native</div>
+          <div>React</div>
         </div>
       </div>
       <div className="flex-1 ml4-l ml pb4-m pb4-l"> Popcorn time was the first web application utilizing paired programming. Our team of myself and two others wanted to create and IMBD clone. Our goal was to reverse engineer the current IMBD web application and launch our own with simple user AUTH and full CRUD functionality</div>
