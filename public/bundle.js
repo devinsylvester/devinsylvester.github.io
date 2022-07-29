@@ -26036,7 +26036,7 @@ var App = function (_Component) {
                     { rel: 'noopener noreferrer', target: '_blank', href: 'https://generalassemb.ly/education/software-engineering-immersive/atlanta' },
                     'General Assembly'
                   ),
-                  ', graduate I\'m seeking remote work and willing to relocate.'
+                  ', graduate I\'m seeking remote work and open to relocation.'
                 ),
                 _react2.default.createElement(
                   'div',
@@ -26044,7 +26044,7 @@ var App = function (_Component) {
                   'In my free time, I enjoy ',
                   _react2.default.createElement(
                     'a',
-                    { rel: 'noopener noreferrer', target: '_blank', href: 'www.instagram.com/dev24/' },
+                    { rel: 'noopener noreferrer', target: '_blank', href: 'https://www.instagram.com/rai_sylvester/' },
                     'family time'
                   ),
                   ', ',
@@ -26090,7 +26090,7 @@ var App = function (_Component) {
                 'div',
                 { className: 'flex justify-between flex-wrap' },
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'htmlicon', toolName: 'HTML 5' }),
-                _react2.default.createElement(_RenderIcon2.default, { iconName: 'css3icon', toolName: 'CSS 3' }),
+                _react2.default.createElement(_RenderIcon2.default, { iconName: 'css3icon', toolName: 'CSS' }),
                 _react2.default.createElement(_RenderIcon2.default, { iconName: 'nodeicon', toolName: 'Node' })
               )
             ),
@@ -26105,6 +26105,7 @@ var App = function (_Component) {
                   { className: 'strike-through-wrapper' },
                   _react2.default.createElement('div', { className: 'strike-through-first' }),
                   _react2.default.createElement('div', { className: 'strike-through-second' }),
+                  '** ',
                   _react2.default.createElement(
                     'span',
                     null,
@@ -26122,7 +26123,7 @@ var App = function (_Component) {
                   { className: 'mw6 pointer', role: 'button', onClick: function onClick() {
                       return _this3.setState({ showGotcha: true });
                     } },
-                  _react2.default.createElement('img', { src: '/images/popcorntime1.png', alt: 'gotcha' })
+                  _react2.default.createElement('img', { src: '/images/popcorntime1.png', href: 'https://sei-popcorn-time.herokuapp.com/', alt: 'popcorntime' })
                 ),
                 this.state.showGotcha && _react2.default.createElement(
                   _ProjectModal2.default,
@@ -44693,7 +44694,7 @@ var GotchaModal = function GotchaModal() {
     _react2.default.createElement(
       "div",
       { className: "f2 mb4 center" },
-      "Gotcha Rides"
+      "Popcorn Time"
     ),
     _react2.default.createElement(
       "div",
@@ -44707,12 +44708,12 @@ var GotchaModal = function GotchaModal() {
           _react2.default.createElement(
             "div",
             { className: "mr2" },
-            "Employer:"
+            "Date Lunched"
           ),
           _react2.default.createElement(
             "div",
             null,
-            "Launchpeer"
+            "May 15th 2022"
           )
         ),
         _react2.default.createElement(
@@ -44726,7 +44727,7 @@ var GotchaModal = function GotchaModal() {
           _react2.default.createElement(
             "div",
             null,
-            "On demand ride sharing app for low speed electric vehicles"
+            "IMBD Clone"
           )
         ),
         _react2.default.createElement(
@@ -44754,7 +44755,7 @@ var GotchaModal = function GotchaModal() {
           _react2.default.createElement(
             "div",
             null,
-            "9 months"
+            "1 week"
           )
         ),
         _react2.default.createElement(
@@ -44768,14 +44769,14 @@ var GotchaModal = function GotchaModal() {
           _react2.default.createElement(
             "div",
             null,
-            "React, React Native"
+            "React"
           )
         )
       ),
       _react2.default.createElement(
         "div",
         { className: "flex-1 ml4-l ml pb4-m pb4-l" },
-        "Gotcha Rides was the first app where I really cut my teeth on React Native development. The scope of the project ended up being pretty big, with a public facing passenger app, an internal driver app, and a web based admin portal. I was responsible for leading the front end team in planning, developing, and deploying the applications throughout the project lifecycle. I had the opportunity to tackle some really interesting problems, like real-time dynamic ride branding, and handling driver location accuracy across different devices."
+        " Popcorn time was the first web application utilizing paired programming. Our team of myself and two others wanted to create and IMBD clone. Our goal was to reverse engineer the current IMBD web application and launch our own with simple user AUTH and full CRUD functionality"
       )
     ),
     _react2.default.createElement(
@@ -44787,9 +44788,9 @@ var GotchaModal = function GotchaModal() {
         _react2.default.createElement(
           "div",
           { className: "ma3" },
-          "Driver App"
+          "Logo"
         ),
-        _react2.default.createElement("img", { src: "/images/gotcha-d-full.png", alt: "gotcha" })
+        _react2.default.createElement("img", { src: "/images/popcorntime1.png", alt: "gotcha" })
       ),
       _react2.default.createElement(
         "div",
@@ -44797,9 +44798,9 @@ var GotchaModal = function GotchaModal() {
         _react2.default.createElement(
           "div",
           { className: "ma3" },
-          "Passenger App"
+          "Movies page"
         ),
-        _react2.default.createElement("img", { src: "/images/gotcha-full.png", alt: "gotcha" })
+        _react2.default.createElement("img", { src: "/images/popcorntime2.png", alt: "gotcha" })
       ),
       _react2.default.createElement(
         "div",
@@ -44807,7 +44808,7 @@ var GotchaModal = function GotchaModal() {
         _react2.default.createElement(
           "div",
           { className: "ma3" },
-          "Admin Portal"
+          "Full CRUD funcionality"
         ),
         _react2.default.createElement(
           "div",
@@ -44815,13 +44816,13 @@ var GotchaModal = function GotchaModal() {
           _react2.default.createElement(
             "div",
             { className: "mr3" },
-            _react2.default.createElement("img", { src: "/images/gotcha-a-rides.png", alt: "gotcha" })
+            _react2.default.createElement("img", { src: "/images/popcorntime3.png", alt: "gotcha" })
           ),
           _react2.default.createElement(
             "div",
-            { className: "ml3" },
+            { className: "ml4" },
             " ",
-            _react2.default.createElement("img", { src: "/images/gotcha-a-rides-edit.png", alt: "gotcha" })
+            _react2.default.createElement("img", { src: "/images/popcorntime4.png", alt: "gotcha" })
           )
         )
       )
@@ -44937,7 +44938,7 @@ var MylaiModal = function MylaiModal() {
       _react2.default.createElement(
         "div",
         { className: "flex-1 ml4-l ml pb4-m pb4-l" },
-        "End of the bootcamp solo project. We were graded upon a few aspects including full CRUD functionality, new technologies used, and presentation engagement."
+        "End of the bootcamp solo project. We were graded upon a few aspects including full CRUD functionality, new technologies used, and presentation engagement. My personal goal with the project was to create a fitness app where individuals could see what others were doing and get inspired, spark interest or motivate."
       )
     ),
     _react2.default.createElement(
@@ -44951,7 +44952,7 @@ var MylaiModal = function MylaiModal() {
           { className: "ma3" },
           "Logo"
         ),
-        _react2.default.createElement("img", { src: "/images/workoutapplogo.png", alt: "gotcha" })
+        _react2.default.createElement("img", { src: "/images/workoutapp1.png", alt: "gotcha" })
       ),
       _react2.default.createElement(
         "div",
@@ -44961,7 +44962,7 @@ var MylaiModal = function MylaiModal() {
           { className: "ma3" },
           "Create Workout"
         ),
-        _react2.default.createElement("img", { src: "/images/createworkoutsample.png", alt: "gotcha" })
+        _react2.default.createElement("img", { src: "/images/workoutapp2.png", alt: "gotcha" })
       ),
       _react2.default.createElement(
         "div",
@@ -44977,7 +44978,13 @@ var MylaiModal = function MylaiModal() {
           _react2.default.createElement(
             "div",
             { className: "mr3" },
-            _react2.default.createElement("img", { src: "/images/sampleworkout.png", alt: "mylai" })
+            _react2.default.createElement("img", { src: "/images/workoutapp3.png", alt: "mylai" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "ml4" },
+            " ",
+            _react2.default.createElement("img", { src: "/images/workoutapp4.png", alt: "mylai" })
           )
         )
       )
